@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <!-- ICS-style search bar at the top. -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        app:iconifiedByDefault="false"/>
+
+    <!-- Multi-page workspace via ViewPager2. -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/workspace_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:layout_above="@id/page_indicator"/>
+
+    <!-- Page indicator dots. -->
+    <LinearLayout
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dock_container"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"/>
+
+    <!-- Dock container (bottom). -->
+    <RelativeLayout
+        android:id="@+id/dock_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dock_height"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/dock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_dock"
+            android:orientation="horizontal"
+            android:padding="4dp"/>
+
+        <!-- Wallpaper + quick settings + settings shortcuts (floating, bottom-right). -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_wallpaper"
+                style="@style/Widget.ICSLauncher.IconButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/wallpaper"
+                android:src="@drawable/ic_action_wallpaper"
+                android:tint="@color/colorOnSurfaceVariant"/>
+
+            <ImageButton
+                android:id="@+id/btn_quick_settings"
+                style="@style/Widget.ICSLauncher.IconButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/quick_settings"
+                android:src="@drawable/ic_action_quick_settings"
+                android:tint="@color/colorOnSurfaceVariant"/>
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                style="@style/Widget.ICSLauncher.IconButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/settings"
+                android:src="@drawable/ic_action_settings"
+                android:tint="@color/colorOnSurfaceVariant"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

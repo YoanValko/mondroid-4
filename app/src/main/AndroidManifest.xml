@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.icslauncher">
+
+    <!--
+         Normal permissions (granted at install, no runtime prompt):
+           SET_WALLPAPER        - needed to set static/live wallpaper via WallpaperManager
+           INTERNET             - used only by the reimplemented Browser to load web pages
+           VIBRATE              - haptic feedback in the ICS easter egg / clock
+           WAKE_LOCK            - keep the clock/desk-dock screen on while charging
+    -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!--
+         Dangerous permissions (requested at runtime by the reimplemented Nexus-era apps).
+         READ_EXTERNAL_STORAGE is declared with maxSdkVersion=32 because on API 33+
+         the scoped-storage permissions READ_MEDIA_IMAGES / READ_MEDIA_AUDIO are used instead.
+    -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+
+    <!-- Clock / alarm reimplementation -->
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- Hardware features used by the app (camera is optional so the app installs on
+         devices without a rear camera). -->
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"/>
+
+    <application
+        android:name=".ICSApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.ICSLauncher"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="false"
+        android:resizeableActivity="true"
+        android:windowSoftInputMode="stateUnspecified">
+
+        <!-- Welcome screen (first-run) — registered as HOME entry point. -->
+        <activity
+            android:name=".settings.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Launcher (home screen) — opened from welcome or directly. -->
+        <activity
+            android:name=".launcher.ICSLauncherActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="unspecified"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateUnspecified"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- App drawer (full list of installed launcher apps). -->
+        <activity
+            android:name=".drawer.AppDrawerActivity"
+            android:label="@string/app_drawer"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Wallpaper picker (static + live wallpaper selection). -->
+        <activity
+            android:name=".wallpaper.WallpaperPickerActivity"
+            android:label="@string/wallpaper"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- ICS Easter egg (self-contained activity). -->
+        <activity
+            android:name=".easteregg.EasterEggActivity"
+            android:label="@string/easter_egg"
+            android:theme="@style/Theme.ICSLauncher.Dialog"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Settings (grid size, dark theme, ...). -->
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/settings"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- About screen. -->
+        <activity
+            android:name=".settings.AboutActivity"
+            android:label="@string/settings_about"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Quick Settings panel. -->
+        <activity
+            android:name=".settings.QuickSettingsActivity"
+            android:label="@string/quick_settings"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- =====================================================================
+             NEXUS-ERA APPS (reimplemented, not copied from system images)
+             ===================================================================== -->
+        <activity
+            android:name=".apps.ICSMusicActivity"
+            android:label="@string/app_music"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSGalleryActivity"
+            android:label="@string/app_gallery"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSCameraActivity"
+            android:label="@string/app_camera"
+            android:theme="@style/Theme.ICSLauncher.NoActionBar"
+            android:screenOrientation="sensor"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSCalculatorActivity"
+            android:label="@string/app_calculator"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSClockActivity"
+            android:label="@string/app_clock"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ISBrowserActivity"
+            android:label="@string/app_browser"
+            android:theme="@style/Theme.ICSLauncher.NoActionBar"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ISEmailActivity"
+            android:label="@string/app_email"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSContactsActivity"
+            android:label="@string/app_contacts"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSCalendarActivity"
+            android:label="@string/app_calendar"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+        <activity
+            android:name=".apps.ICSMessagingActivity"
+            android:label="@string/app_messaging"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Photo viewer (opened from Gallery). -->
+        <activity
+            android:name=".apps.ICSPhotoViewActivity"
+            android:label="@string/app_gallery"
+            android:theme="@style/Theme.ICSLauncher.NoActionBar"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Notes app. -->
+        <activity
+            android:name=".apps.ICSNotesActivity"
+            android:label="@string/app_notes"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- File Manager app. -->
+        <activity
+            android:name=".apps.ICSFileManagerActivity"
+            android:label="@string/app_file_manager"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Clock widget provider. -->
+        <receiver
+            android:name=".apps.ICSClockWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_clock_info"/>
+        </receiver>
+
+        <!-- =====================================================================
+             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
+             ===================================================================== -->
+        <service
+            android:name=".wallpaper.ICSWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper"/>
+        </service>
+    </application>
+
+</manifest>

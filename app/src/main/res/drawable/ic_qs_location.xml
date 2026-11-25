@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Location pin -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M24,14 C19,14 16,17 16,22 C16,28 24,36 24,36 S32,28 32,22 C32,17 29,14 24,14 Z"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M24,24 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+</vector>

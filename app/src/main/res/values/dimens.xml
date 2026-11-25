@@ -1,0 +1,21 @@
+<resources>
+    <!-- Screen metrics -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="search_bar_height">48dp</dimen>
+    <dimen name="dock_height">96dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- App icons -->
+    <dimen name="app_icon_size">48dp</dimen>
+    <dimen name="app_icon_size_small">36dp</dimen>
+    <dimen name="app_label_text_size">12sp</dimen>
+
+    <!-- Wallpaper picker -->
+    <dimen name="wallpaper_thumb_size">120dp</dimen>
+
+    <!-- Easter egg -->
+    <dimen name="easter_egg_name_text_size">10sp</dimen>
+</resources>

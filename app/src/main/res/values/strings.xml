@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">ICS Home Launcher</string>
+
+    <!-- Home screen -->
+    <string name="app_drawer">Apps</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="easter_egg">Android Easter egg</string>
+    <string name="about">About</string>
+
+    <!-- App drawer / shortcuts -->
+    <string name="shortcut_phone">Phone</string>
+    <string name="shortcut_browser">Browser</string>
+    <string name="shortcut_email">Email</string>
+    <string name="shortcut_camera">Camera</string>
+    <string name="shortcut_all_apps">Apps</string>
+    <string name="shortcut_back">Back</string>
+    <string name="shortcut_recent_apps">Recents</string>
+    <string name="all_apps">All Apps</string>
+
+    <!-- Nexus-era apps -->
+    <string name="app_music">Music</string>
+    <string name="app_gallery">Gallery</string>
+    <string name="app_camera">Camera</string>
+    <string name="app_calculator">Calculator</string>
+    <string name="app_clock">Clock</string>
+    <string name="app_browser">Browser</string>
+    <string name="app_email">Email</string>
+    <string name="app_contacts">Contacts</string>
+    <string name="app_calendar">Calendar</string>
+    <string name="app_messaging">Messaging</string>
+    <string name="app_notes">Notes</string>
+    <string name="app_file_manager">File Manager</string>
+
+    <!-- Wallpaper -->
+    <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>
+    <string name="wallpaper_ics_blue">ICS Blue</string>
+    <string name="wallpaper_ics_sand">ICS Sand</string>
+    <string name="wallpaper_ics_live">ICS Live (robot)</string>
+    <string name="wallpaper_from_photos">From Photos…</string>
+    <string name="wallpaper_set_as">Set as wallpaper</string>
+    <string name="wallpaper_preview">Preview</string>
+    <string name="wallpaper_set_done">Wallpaper set</string>
+    <string name="wallpaper_error">Could not set wallpaper</string>
+    <string name="wallpaper_permission_denied">Storage permission required to pick a photo</string>
+
+    <!-- Settings -->
+    <string name="settings_grid_size">Home screen grid size</string>
+    <string name="settings_grid_size_summary">Number of app icons per row</string>
+    <string name="settings_dark_theme">Dark theme</string>
+    <string name="settings_dark_theme_summary">Use a dark (holo-dark) theme</string>
+    <string name="settings_show_dock">Show dock</string>
+    <string name="settings_show_dock_summary">Show the bottom app dock</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_version_value">1.0.0</string>
+
+    <!-- Grid size list preference -->
+    <string-array name="grid_size_entries">
+        <item>4 × 4</item>
+        <item>4 × 5</item>
+        <item>5 × 5</item>
+        <item>5 × 6</item>
+    </string-array>
+    <string-array name="grid_size_values">
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Permissions -->
+    <string name="perm_camera_rationale">Camera access is required to take photos.</string>
+    <string name="perm_storage_rationale">Storage access is required to read photos and music.</string>
+    <string name="perm_denied">Permission denied. Some features will be limited.</string>
+
+    <!-- Easter egg -->
+    <string name="easter_egg_tap">Tap the Android version…</string>
+    <string name="easter_egg_team">The Android team</string>
+
+    <string name="title_activity_launcher">Home</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- About -->
+    <string name="about_version">Version 1.0.0 &#8226; Build 1</string>
+    <string name="about_title">About ICS Home Launcher</string>
+    <string name="about_description">A retro Ice Cream Sandwich-style home screen experience reimplemented for modern Android (10–16). No root, no custom recovery, no unlocked bootloader required.</string>
+    <string name="about_credits">All icons, wallpapers, and artwork are original vector drawings. No proprietary system binaries are bundled.</string>
+    <string name="about_license">Distributed under the MIT License. See LICENSE file for details.</string>
+    <string name="about_trademark">Android, Ice Cream Sandwich, and Nexus are trademarks of Google LLC. This app is an independent, unofficial project and is not affiliated with or endorsed by Google LLC.</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings">Quick Settings</string>
+    <string name="qs_wifi">Wi-Fi</string>
+    <string name="qs_bluetooth">Bluetooth</string>
+    <string name="qs_data">Data Usage</string>
+    <string name="qs_sound">Sound</string>
+    <string name="qs_display">Display</string>
+    <string name="qs_battery">Battery</string>
+    <string name="qs_location">Location</string>
+    <string name="qs_security">Security</string>
+    <string name="qs_accounts">Accounts</string>
+    <string name="more_settings">More Settings</string>
+
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Ice Cream Sandwich Style</string>
+    <string name="welcome_body">A retro home screen experience reimplemented for modern Android. No root, no custom recovery, no unlocked bootloader required.</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Add to home -->
+    <string name="add_to_home">Add to Home Screen</string>
+    <string name="add_app_shortcut">Add App Shortcut</string>
+    <string name="add_widget">Add Widget</string>
+    <string name="cancel">Cancel</string>
+</resources>

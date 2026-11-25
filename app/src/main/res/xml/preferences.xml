@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="grid_size"
+        android:title="@string/settings_grid_size"
+        android:summary="@string/settings_grid_size_summary"
+        android:entries="@array/grid_size_entries"
+        android:entryValues="@array/grid_size_values"
+        android:defaultValue="4"/>
+
+    <SwitchPreferenceCompat
+        android:key="dark_theme"
+        android:title="@string/settings_dark_theme"
+        android:summary="@string/settings_dark_theme_summary"
+        android:defaultValue="false"/>
+
+    <SwitchPreferenceCompat
+        android:key="show_dock"
+        android:title="@string/settings_show_dock"
+        android:summary="@string/settings_show_dock_summary"
+        android:defaultValue="true"/>
+
+    <Preference
+        android:key="easter_egg"
+        android:title="@string/easter_egg"/>
+
+    <Preference
+        android:key="version"
+        android:title="@string/settings_version"
+        android:summary="@string/settings_version_value"/>
+
+    <Preference
+        android:key="about"
+        android:title="@string/settings_about"/>
+
+</PreferenceScreen>

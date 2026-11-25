@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Quick settings / slider icon -->
+    <path
+        android:fillColor="@color/colorOnSurfaceVariant"
+        android:pathData="M3,7 H5 V5 H3 Z M3,11 H5 V9 H3 Z M3,15 H5 V13 H3 Z M11,7 H13 V5 H11 Z M11,11 H13 V9 H11 Z M11,15 H13 V13 H11 Z M19,7 H21 V5 H19 Z M19,11 H21 V9 H19 Z M19,15 H21 V13 H19 Z"/>
+</vector>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gallery_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No photos found"
+        android:textColor="@color/colorOnSurfaceVariant"
+        android:visibility="gone"/>
+
+    <GridView
+        android:id="@+id/gallery_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"/>
+</LinearLayout>

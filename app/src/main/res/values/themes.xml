@@ -1,0 +1,31 @@
+<resources>
+    <!-- Base application theme (light = stock ICS look). -->
+    <style name="Theme.ICSLauncher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorOnSurface</item>
+        <item name="android:textColorSecondary">@color/colorOnSurfaceVariant</item>
+        <item name="dividerColor">@color/colorDivider</item>
+    </style>
+
+    <!-- Dialog theme used by the Easter egg activity. -->
+    <style name="Theme.ICSLauncher.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorOnSurface</item>
+    </style>
+
+    <!-- Full-screen theme without action bar (used by Camera / Browser). -->
+    <style name="Theme.ICSLauncher.NoActionBar" parent="Theme.ICSLauncher">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Preference theme (required by PreferenceFragmentCompat). -->
+    <style name="PreferenceTheme" parent="PreferenceThemeOverlay"/>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <!-- Ice Cream Sandwich "holo" accent palette (design reference, reimplemented). -->
+    <color name="ics_blue">#0099CC</color>
+    <color name="ics_blue_dark">#0077AA</color>
+    <color name="ics_blue_light">#33B5E5</color>
+    <color name="ics_android_green">#A4C639</color>
+    <color name="ics_android_green_dark">#7E942E</color>
+    <color name="ics_bread">#F5DEB3</color>
+    <color name="ics_cream">#FFF8DC</color>
+
+    <!-- Theme colors (light theme). colorSurface / colorBackground are mirrored in
+         values-night/colors.xml for the dark theme. -->
+    <color name="colorPrimary">#0099CC</color>
+    <color name="colorPrimaryDark">#0077AA</color>
+    <color name="colorAccent">#33B5E5</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorBackground">#F9F9F9</color>
+    <color name="colorOnSurface">#1A1A1A</color>
+    <color name="colorOnSurfaceVariant">#737373</color>
+    <color name="colorDivider">#BDBDBD</color>
+</resources>

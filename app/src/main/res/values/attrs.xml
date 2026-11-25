@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom theme attributes used by the ICS Launcher theme. -->
+    <attr name="dividerColor" format="reference|color"/>
+</resources>

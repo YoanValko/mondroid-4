@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.icslauncher'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.example.icslauncher'
+        minSdk 29
+        targetSdk 36
+        versionCode 1
+        versionName '4.0.4-1.0'
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+// Java 21 toolchain for compilation (D8 runs on Java 17 JVM)
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+// Exclude legacy Kotlin stdlib jdk7/jdk8 artifacts globally to avoid
+// duplicate-class conflicts with the newer kotlin-stdlib (CameraX pulls
+// in old kotlin-stdlib-jdk7/jdk8 transitively).
+configurations.all {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+}
+
+dependencies {
+    // AndroidX core / appcompat / recyclerview / preference
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

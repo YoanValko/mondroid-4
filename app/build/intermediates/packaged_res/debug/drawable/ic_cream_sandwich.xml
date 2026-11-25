@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Top bread -->
+    <path
+        android:fillColor="#F5DEB3"
+        android:pathData="M20,70 h80 v20 h-80 z"/>
+    <path
+        android:fillColor="#D2A679"
+        android:pathData="M20,70 q40,-8 80,0 v10 q-40,8 -80,0 z"/>
+    <!-- Cream filling -->
+    <path
+        android:fillColor="#FFF8DC"
+        android:pathData="M20,80 h80 v18 h-80 z"/>
+    <!-- Bottom bread -->
+    <path
+        android:fillColor="#F5DEB3"
+        android:pathData="M20,98 h80 v8 h-80 z"/>
+    <path
+        android:fillColor="#D2A679"
+        android:pathData="M20,98 q40,4 80,0 v10 q-40,-4 -80,0 z"/>
+</vector>

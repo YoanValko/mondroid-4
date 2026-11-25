@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Accounts / People -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M24,16 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M14,22 Q24,16 34,22 L34,34 Q24,30 14,34 Z"/>
+</vector>

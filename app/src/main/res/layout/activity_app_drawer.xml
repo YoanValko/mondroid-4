@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search apps"/>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No apps found"
+        android:textColor="@color/colorOnSurfaceVariant"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/drawer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_apps"
+        android:textColor="@color/colorOnSurfaceVariant"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drawer_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/drawer_header"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:clipToPadding="false"
+        android:verticalSpacing="16dp"
+        android:horizontalSpacing="16dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>

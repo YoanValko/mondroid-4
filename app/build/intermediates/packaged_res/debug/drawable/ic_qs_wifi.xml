@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Wi-Fi signal -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M24,12 L24,20 M18,18 L30,18 M16,22 L32,22 M14,26 L34,26"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M24,14 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+</vector>

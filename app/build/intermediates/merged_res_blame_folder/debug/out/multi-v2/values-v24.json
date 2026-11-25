@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.icslauncher.app-mergeDebugResources-2:/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/tmp/gradle-home/caches/8.10.2/transforms/e38e35806c3085314f134528a82094e6/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}
