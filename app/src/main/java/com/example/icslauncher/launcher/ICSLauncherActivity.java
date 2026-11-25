@@ -82,6 +82,7 @@ public class ICSLauncherActivity extends AppCompatActivity {
             new Shortcut(R.string.app_file_manager, "com.example.icslauncher", ".apps.ICSFileManagerActivity"),
             new Shortcut(R.string.app_settings, "com.example.icslauncher", ".apps.ICSSettingsActivity"),
             new Shortcut(R.string.app_info, "com.example.icslauncher", ".apps.ICSAppInfoActivity"),
+            new Shortcut(R.string.app_frequent_apps, "com.example.icslauncher", ".apps.ICSFrequentAppsActivity"),
             new Shortcut(R.string.settings, "com.example.icslauncher", ".settings.SettingsActivity"),
             new Shortcut(R.string.wallpaper, "com.example.icslauncher", ".wallpaper.WallpaperPickerActivity"),
     };

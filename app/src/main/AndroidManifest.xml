@@ -227,6 +227,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Frequent Apps activity. -->
+        <activity
+            android:name=".apps.ICSFrequentAppsActivity"
+            android:label="@string/app_frequent_apps"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Clock widget provider. -->
         <receiver
             android:name=".apps.ICSClockWidgetProvider"
