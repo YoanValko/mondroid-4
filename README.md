@@ -43,6 +43,7 @@
 | App Info | App details and storage info |
 | Device Info | System model, manufacturer, API level, and more |
 | Frequent Apps | Launch frequency-based app list |
+| Recent Apps | Recently launched apps list |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
@@ -156,7 +157,7 @@ Verify:
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
 ✅ APK generated (~9.6 MB)
-✅ 25 activities + 1 wallpaper service + 2 receivers registered
+✅ 26 activities + 1 wallpaper service + 2 receivers registered
 ✅ GitHub repository: https://github.com/YoanValko/mondroid-4
 
 ---
