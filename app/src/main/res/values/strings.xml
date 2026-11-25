@@ -17,6 +17,7 @@
     <string name="shortcut_all_apps">Apps</string>
     <string name="shortcut_back">Back</string>
     <string name="shortcut_recent_apps">Recents</string>
+    <string name="shortcut_search">Search</string>
     <string name="all_apps">All Apps</string>
 
     <!-- Nexus-era apps -->
@@ -37,6 +38,7 @@
     <string name="app_frequent_apps">Frequent Apps</string>
     <string name="app_device_info">Device Info</string>
     <string name="app_recent_apps">Recent Apps</string>
+    <string name="app_search">Search</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>

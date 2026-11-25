@@ -69,6 +69,7 @@
     <string name="app_name">ICS Home Launcher</string>
     <string name="app_notes">Notes</string>
     <string name="app_recent_apps">Recent Apps</string>
+    <string name="app_search">Search</string>
     <string name="app_settings">Settings</string>
     <string name="cancel">Cancel</string>
     <string name="easter_egg">Android Easter egg</string>
@@ -107,6 +108,7 @@
     <string name="shortcut_email">Email</string>
     <string name="shortcut_phone">Phone</string>
     <string name="shortcut_recent_apps">Recents</string>
+    <string name="shortcut_search">Search</string>
     <string name="title_activity_launcher">Home</string>
     <string name="title_activity_settings">Settings</string>
     <string name="wallpaper">Wallpaper</string>

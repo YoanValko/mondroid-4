@@ -269,6 +269,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Search activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSSearchActivity"
+            android:exported="true"
+            android:label="@string/app_search"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"

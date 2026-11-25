@@ -1604,6 +1604,7 @@ string app_music
 string app_name
 string app_notes
 string app_recent_apps
+string app_search
 string app_settings
 string call_notification_answer_action
 string call_notification_answer_video_action
@@ -1654,6 +1655,7 @@ string shortcut_camera
 string shortcut_email
 string shortcut_phone
 string shortcut_recent_apps
+string shortcut_search
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string title_activity_launcher

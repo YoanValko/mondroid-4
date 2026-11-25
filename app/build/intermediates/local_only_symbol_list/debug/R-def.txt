@@ -157,6 +157,7 @@ string app_music
 string app_name
 string app_notes
 string app_recent_apps
+string app_search
 string app_settings
 string cancel
 string easter_egg
@@ -195,6 +196,7 @@ string shortcut_camera
 string shortcut_email
 string shortcut_phone
 string shortcut_recent_apps
+string shortcut_search
 string title_activity_launcher
 string title_activity_settings
 string wallpaper
