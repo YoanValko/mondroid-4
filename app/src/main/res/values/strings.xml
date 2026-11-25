@@ -32,6 +32,7 @@
     <string name="app_messaging">Messaging</string>
     <string name="app_notes">Notes</string>
     <string name="app_file_manager">File Manager</string>
+    <string name="app_settings">Settings</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>

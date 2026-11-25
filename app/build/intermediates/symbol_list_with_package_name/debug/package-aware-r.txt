@@ -1600,6 +1600,7 @@ string app_messaging
 string app_music
 string app_name
 string app_notes
+string app_settings
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action

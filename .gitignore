@@ -1,0 +1,44 @@
+*.apk
+*.aab
+
+# Built application files
+*.dex
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keystore files
+*.jks
+*.keystore
+
+# Signing files
+*.key
+*.pk8
+*.pem
+
+# Temporary
+*.tmp
+*.bak
+*.swp
+
+# Logs
+*.log

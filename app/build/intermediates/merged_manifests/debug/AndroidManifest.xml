@@ -237,6 +237,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Settings app. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSSettingsActivity"
+            android:exported="true"
+            android:label="@string/app_settings"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Clock widget provider. -->
         <receiver
             android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
