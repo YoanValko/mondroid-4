@@ -17,11 +17,15 @@ import java.util.List;
 
 /**
  * Reimplementation of the Ice Cream Sandwich Calculator. Basic arithmetic (+ - * /) with a
- * simple expression evaluator; no network, no proprietary code.
+ * simple expression evaluator, memory functions (M+, M-, MR, MC), and no network.
  */
 public class ICSCalculatorActivity extends AppCompatActivity {
 
     private EditText display;
+    private TextView exprView;
+    private TextView memIndicator;
+    private double memory = 0;
+    private boolean memorySet = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,13 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         root.setOrientation(LinearLayout.VERTICAL);
         root.setPadding(16, 16, 16, 16);
 
+        // Memory indicator
+        memIndicator = new TextView(this);
+        memIndicator.setText("M: 0");
+        memIndicator.setTextSize(12);
+        memIndicator.setPadding(0, 0, 0, 8);
+        root.addView(memIndicator);
+
         display = new EditText(this);
         display.setTextSize(32);
         display.setFocusable(false);
@@ -38,11 +49,27 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         display.setPadding(0, 8, 0, 8);
         root.addView(display);
 
-        TextView expr = new TextView(this);
-        expr.setTextSize(18);
-        expr.setText("0");
-        root.addView(expr);
+        exprView = new TextView(this);
+        exprView.setTextSize(18);
+        exprView.setText("0");
+        root.addView(exprView);
 
+        // Memory row
+        LinearLayout memRow = new LinearLayout(this);
+        memRow.setOrientation(LinearLayout.HORIZONTAL);
+        String[] memKeys = {"MC", "MR", "M-", "M+"};
+        for (final String cap : memKeys) {
+            Button b = new Button(this);
+            b.setText(cap);
+            b.setTextSize(16);
+            b.setLayoutParams(new LinearLayout.LayoutParams(
+                    0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f));
+            b.setOnClickListener(v -> onMemoryKey(cap));
+            memRow.addView(b);
+        }
+        root.addView(memRow);
+
+        // Numeric keypad
         String[][] rows = {
                 {"7", "8", "9", "/"},
                 {"4", "5", "6", "*"},
@@ -66,6 +93,37 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         }
 
         setContentView(root);
+    }
+
+    private void onMemoryKey(String cap) {
+        try {
+            String cur = display.getText().toString();
+            double val = cur.isEmpty() ? 0 : Double.parseDouble(cur);
+            switch (cap) {
+                case "MC":
+                    memory = 0;
+                    memorySet = false;
+                    break;
+                case "MR":
+                    display.setText(fmt(memory));
+                    break;
+                case "M-":
+                    memory = memorySet ? memory - val : -val;
+                    memorySet = true;
+                    break;
+                case "M+":
+                    memory = memorySet ? memory + val : val;
+                    memorySet = true;
+                    break;
+            }
+            updateMemIndicator();
+        } catch (Exception e) {
+            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void updateMemIndicator() {
+        memIndicator.setText("M: " + fmt(memory));
     }
 
     private void onKey(String cap) {
