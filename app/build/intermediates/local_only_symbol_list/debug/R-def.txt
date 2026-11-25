@@ -151,6 +151,7 @@ string app_drawer
 string app_email
 string app_file_manager
 string app_flashlight
+string app_fortune
 string app_frequent_apps
 string app_gallery
 string app_info

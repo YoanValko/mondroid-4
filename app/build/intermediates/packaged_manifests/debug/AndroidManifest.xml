@@ -321,6 +321,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Fortune activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSFortuneActivity"
+            android:exported="true"
+            android:label="@string/app_fortune"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
