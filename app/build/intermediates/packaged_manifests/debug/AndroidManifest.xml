@@ -289,6 +289,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Compass activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSCompassActivity"
+            android:exported="true"
+            android:label="@string/app_compass"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"

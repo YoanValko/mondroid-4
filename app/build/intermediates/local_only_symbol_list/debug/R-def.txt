@@ -144,6 +144,7 @@ string app_calculator
 string app_calendar
 string app_camera
 string app_clock
+string app_compass
 string app_contacts
 string app_device_info
 string app_drawer

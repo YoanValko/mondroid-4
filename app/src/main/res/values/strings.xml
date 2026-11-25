@@ -40,6 +40,7 @@
     <string name="app_recent_apps">Recent Apps</string>
     <string name="app_search">Search</string>
     <string name="app_sound_recorder">Sound Recorder</string>
+    <string name="app_compass">Compass</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>
