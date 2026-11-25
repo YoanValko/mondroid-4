@@ -43,6 +43,7 @@
     <string name="app_compass">Compass</string>
     <string name="app_flashlight">Flashlight</string>
     <string name="app_timer">Timer</string>
+    <string name="app_weather">Weather</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>

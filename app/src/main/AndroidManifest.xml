@@ -286,6 +286,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Weather activity. -->
+        <activity
+            android:name=".apps.ICSWeatherActivity"
+            android:label="@string/app_weather"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Device Info activity. -->
         <activity
             android:name=".apps.ICSDeviceInfoActivity"
