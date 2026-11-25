@@ -1,0 +1,150 @@
+# mondroid 4 — ICS Home Launcher
+
+**Ice Cream Sandwich (Android 4.0.4) home screen experience reimplemented for modern Android (10–16).**
+
+## Overview
+
+`mondroid 4` is a complete, buildable, root-free launcher that replicates the Android 4.0.4 (Ice Cream Sandwich) user experience as shipped on Google Nexus devices. It installs as a regular app-level package — **no root, no custom recovery, no unlocked bootloader, no system partition modification required**.
+
+## Features
+
+### Launcher Experience
+- **ICS-style home screen** with search bar at top
+- **Multi-page workspace** via ViewPager2 with page indicator dots
+- **Bottom dock** with Back, Phone, Browser, Email, Camera, Recents, and All Apps buttons
+- **Configurable grid size** (4×4, 4×5, 5×5, 5×6) in Settings
+- **Dark theme** (holo-dark inspired palette)
+- **App drawer** with search/filter showing all installed launcher apps
+- **Long-press to add** app shortcuts or widgets
+- **Welcome screen** on first run
+
+### Wallpaper System
+- **Static wallpapers**: 3 bundled original ICS-style designs
+- **Live wallpaper**: Canvas-drawn Android robot on ice cream sandwich with parallax offset on page swipe
+- **From Photos**: Pick any photo from the user's gallery (scoped-storage compliant)
+- **WallpaperService** registered with `BIND_WALLPAPER` permission
+
+### Nexus-Era Apps (Reimplemented)
+| App | Implementation |
+|-----|---------------|
+| Browser | WebView-based |
+| Email | Compose → `mailto:` intent chooser |
+| Gallery | `MediaStore.Images` grid + photo viewer |
+| Music | `MediaStore.Audio` list + MediaPlayer |
+| Camera | System camera intent + MediaStore |
+| Calendar | Stub → opens system Calendar app |
+| Contacts | System contacts picker |
+| Clock | Live time/date + vibrate demo |
+| Calculator | + − × ÷ expression evaluator |
+| Messaging | Compose → `smsto:` intent chooser |
+| Notes | Local SQLite database |
+| File Manager | External storage browser |
+
+### Easter Egg
+Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
+- Tap 5 times to reveal the ice cream sandwich with Android figure
+- Tap sandwich to zoom into scrolling Android-team credits
+- Drag to scroll credits
+- All drawn with Canvas primitives (no proprietary assets)
+
+### Quick Settings
+Panel with toggles for Wi-Fi, Bluetooth, Data Usage, Sound, Display, Battery, Location, Security, and Accounts — each opens the corresponding system settings page.
+
+### App Widget
+**Clock widget** — shows current time and date, taps to open Clock app.
+
+## Architecture
+
+```
+com.example.icslauncher/
+├── launcher/          ICSLauncherActivity, AppAdapter, AppModel, WorkspacePagerAdapter
+├── drawer/            AppDrawerActivity (all installed apps + search)
+├── wallpaper/         WallpaperPickerActivity, ICSWallpaperService, WallpaperAdapter
+├── easteregg/         EasterEggActivity, EasterEggView (self-contained ICS egg)
+├── settings/          SettingsActivity, ICSPreferenceFragment, AboutActivity,
+│                      QuickSettingsActivity, WelcomeActivity
+└── apps/              12 Nexus-era app reimplementations
+```
+
+## Build Requirements
+
+- Android SDK Platform 34 (or 36)
+- Android SDK Build-Tools 34+
+- Gradle 8.1+
+- Java 17 or 21
+
+## Build Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/YoanValko/mondroid-4.git
+cd mondroid-4
+
+# Set SDK path
+echo "sdk.dir=/path/to/your/Android/Sdk" > local.properties
+
+# Build debug APK
+./gradlew assembleDebug
+
+# Install on device
+adb install app/build/outputs/apk/debug/app-debug.apk
+
+# Set as default launcher
+# Settings → Apps → Default apps → Home app → ICS Home Launcher
+```
+
+## Supported Android Versions
+
+| Version | API Level | Status |
+|---------|-----------|--------|
+| Android 10 | 29 | Supported (minSdk) |
+| Android 11 | 30 | Supported |
+| Android 12 | 31 | Supported |
+| Android 13 | 33 | Supported |
+| Android 14 | 34 | Supported (compileSdk) |
+| Android 15 | 35 | Supported |
+| Android 16 | 36 | Supported (targetSdk) |
+
+## Limitations (Sandbox-Only)
+
+| Feature | Limitation | Compliant Alternative |
+|---------|-----------|----------------------|
+| Force default launcher | User must select in Settings | User picks ICS Home Launcher as default home app |
+| Default SMS/email/calendar | User-controlled defaults | Standalone apps + intent choosers |
+| Read all SMS/media | Scoped storage blocks broad access | `READ_MEDIA_*` runtime permissions |
+| System "About → Android version" egg | Can't modify system Settings | Self-contained EasterEggActivity |
+| Real recents task list | System-only permission | Recents button opens app drawer |
+
+## Licensing & Trademarks
+
+- **No proprietary binaries bundled** — all icons, wallpapers, and artwork are original vector drawings
+- **No closed-source system APKs** — all Nexus-era apps are reimplemented against public Android APIs
+- "Android", "Ice Cream Sandwich", and "Nexus" are trademarks of Google LLC
+- This is an independent, unofficial project — not affiliated with or endorsed by Google LLC
+- Distributed under the MIT License
+
+## Testing
+
+Build and install on:
+- Android 10 (API 29) emulator or device
+- Android 14 (API 34) emulator or device
+- Android 16 (API 36) emulator or device
+
+Verify:
+1. App installs without root/recovery/bootloader unlock
+2. Set as default launcher via Settings
+3. Home screen, app drawer, wallpaper picker all work
+4. Easter egg triggers correctly (5 taps → zoom → scroll credits)
+5. All bundled apps launch and function
+6. Settings changes (grid size, dark theme) apply immediately
+
+## Project Status
+
+✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
+✅ APK generated (~9.5 MB)
+✅ All 19 activities + 1 wallpaper service registered
+✅ GitHub repository: https://github.com/YoanValko/mondroid-4
+
+---
+
+*Built for Android 10–16. No root. No custom recovery. No bootloader unlock. Just ICS.*
