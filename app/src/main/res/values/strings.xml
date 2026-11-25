@@ -42,6 +42,7 @@
     <string name="app_sound_recorder">Sound Recorder</string>
     <string name="app_compass">Compass</string>
     <string name="app_flashlight">Flashlight</string>
+    <string name="app_timer">Timer</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>

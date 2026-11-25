@@ -162,6 +162,7 @@ string app_recent_apps
 string app_search
 string app_settings
 string app_sound_recorder
+string app_timer
 string cancel
 string easter_egg
 string easter_egg_tap

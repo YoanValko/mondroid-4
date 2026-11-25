@@ -305,6 +305,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Timer activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSTimerActivity"
+            android:exported="true"
+            android:label="@string/app_timer"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"

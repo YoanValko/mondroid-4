@@ -278,6 +278,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Timer activity. -->
+        <activity
+            android:name=".apps.ICSTimerActivity"
+            android:label="@string/app_timer"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Device Info activity. -->
         <activity
             android:name=".apps.ICSDeviceInfoActivity"

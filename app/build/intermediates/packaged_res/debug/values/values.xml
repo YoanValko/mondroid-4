@@ -74,6 +74,7 @@
     <string name="app_search">Search</string>
     <string name="app_settings">Settings</string>
     <string name="app_sound_recorder">Sound Recorder</string>
+    <string name="app_timer">Timer</string>
     <string name="cancel">Cancel</string>
     <string name="easter_egg">Android Easter egg</string>
     <string name="easter_egg_tap">Tap the Android version…</string>
