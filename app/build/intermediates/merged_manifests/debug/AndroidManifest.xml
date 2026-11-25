@@ -261,6 +261,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Recent Apps activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSRecentAppsActivity"
+            android:exported="true"
+            android:label="@string/app_recent_apps"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"

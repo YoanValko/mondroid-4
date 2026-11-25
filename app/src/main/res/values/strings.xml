@@ -36,6 +36,7 @@
     <string name="app_info">App Info</string>
     <string name="app_frequent_apps">Frequent Apps</string>
     <string name="app_device_info">Device Info</string>
+    <string name="app_recent_apps">Recent Apps</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>

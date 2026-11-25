@@ -236,7 +236,8 @@ public class ICSLauncherActivity extends AppCompatActivity {
                 startActivity(new Intent(this, com.example.icslauncher.apps.ISEmailActivity.class)));
         addDockIcon(R.drawable.ic_dock_camera, R.string.shortcut_camera, v ->
                 startActivity(new Intent(this, com.example.icslauncher.apps.ICSCameraActivity.class)));
-        addDockIcon(R.drawable.ic_dock_recent, R.string.shortcut_recent_apps, v -> openAppDrawer());
+        addDockIcon(R.drawable.ic_dock_recent, R.string.shortcut_recent_apps, v ->
+                startActivity(new Intent(this, com.example.icslauncher.apps.ICSRecentAppsActivity.class)));
         addDockIcon(R.drawable.ic_action_apps, R.string.shortcut_all_apps, v -> openAppDrawer());
     }
 

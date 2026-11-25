@@ -156,6 +156,7 @@ string app_messaging
 string app_music
 string app_name
 string app_notes
+string app_recent_apps
 string app_settings
 string cancel
 string easter_egg
