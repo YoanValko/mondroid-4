@@ -762,6 +762,7 @@
     <string name="app_drawer">Apps</string>
     <string name="app_email">Email</string>
     <string name="app_file_manager">File Manager</string>
+    <string name="app_flashlight">Flashlight</string>
     <string name="app_frequent_apps">Frequent Apps</string>
     <string name="app_gallery">Gallery</string>
     <string name="app_info">App Info</string>

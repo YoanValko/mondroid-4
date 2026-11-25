@@ -270,6 +270,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Flashlight activity. -->
+        <activity
+            android:name=".apps.ICSFlashlightActivity"
+            android:label="@string/app_flashlight"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Device Info activity. -->
         <activity
             android:name=".apps.ICSDeviceInfoActivity"
