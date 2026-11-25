@@ -45,6 +45,7 @@
 | Frequent Apps | Launch frequency-based app list |
 | Recent Apps | Recently launched apps list |
 | Search | Search installed apps by name |
+| Sound Recorder | Record audio using the microphone |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
@@ -158,7 +159,7 @@ Verify:
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
 ✅ APK generated (~9.6 MB)
-✅ 27 activities + 1 wallpaper service + 2 receivers registered
+✅ 28 activities + 1 wallpaper service + 2 receivers registered
 ✅ GitHub repository: https://github.com/YoanValko/mondroid-4
 
 ---
