@@ -143,6 +143,10 @@ Verify:
 5. All bundled apps launch and function
 6. Settings changes (grid size, dark theme) apply immediately
 
+### Emulator Testing Note
+
+The Android 14 (API 34) emulator was set up with Google APIs x86_64 system image. In this containerized environment, the emulator QEMU process starts but the Android guest OS does not complete boot (heartbeat remains at 0, adb stays offline). This is a resource limitation of the container environment, not an issue with the APK itself. The APK is valid and buildable — install on a physical device or a properly resourced emulator to test.
+
 ## Project Status
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
