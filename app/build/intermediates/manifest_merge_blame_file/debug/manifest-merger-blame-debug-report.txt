@@ -59,581 +59,604 @@
 38    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 38-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:31:5-80
 38-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:31:22-78
-39
-40    <!--
-41         Hardware features used by the app (camera is optional so the app installs on
-42         devices without a rear camera).
-43    -->
-44    <uses-feature
-44-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:35:5-88
-45        android:name="android.hardware.camera.any"
-45-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:35:19-61
-46        android:required="false" />
-46-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:35:62-86
-47    <uses-feature
-47-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:36:5-88
-48        android:name="android.hardware.touchscreen"
-48-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:36:19-62
-49        android:required="true" />
-49-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:36:63-86
-50
-51    <permission
-51-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-52        android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-52-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-53        android:protectionLevel="signature" />
-53-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+39    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+39-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:32:5-70
+39-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:32:22-68
+40    <uses-permission
+40-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:33:5-34:37
+41        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+41-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:33:22-78
+42        android:maxSdkVersion="28" />
+42-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:34:9-35
+43
+44    <!--
+45         Hardware features used by the app (camera is optional so the app installs on
+46         devices without a rear camera).
+47    -->
+48    <uses-feature
+48-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:38:5-88
+49        android:name="android.hardware.camera.any"
+49-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:38:19-61
+50        android:required="false" />
+50-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:38:62-86
+51    <uses-feature
+51-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:39:5-88
+52        android:name="android.hardware.touchscreen"
+52-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:39:19-62
+53        android:required="true" />
+53-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:39:63-86
 54
-55    <uses-permission android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-55-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-55-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-56
-57    <application
-57-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:38:5-288:19
-58        android:name="com.example.icslauncher.ICSApplication"
-58-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:39:9-39
-59        android:allowBackup="true"
-59-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:40:9-35
-60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-60-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-61        android:debuggable="true"
-62        android:extractNativeLibs="false"
-63        android:hardwareAccelerated="true"
-63-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:45:9-43
-64        android:icon="@drawable/ic_launcher"
-64-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:9-45
-65        android:label="@string/app_name"
-65-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:43:9-41
-66        android:resizeableActivity="true"
-66-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:47:9-42
-67        android:roundIcon="@drawable/ic_launcher_round"
-67-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:42:9-56
-68        android:theme="@style/Theme.ICSLauncher"
-68-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:44:9-49
-69        android:usesCleartextTraffic="false"
-69-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:46:9-45
-70        android:windowSoftInputMode="stateUnspecified" >
-70-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:48:9-55
-71
-72        <!-- Welcome screen (first-run) — registered as HOME entry point. -->
-73        <activity
-73-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:51:9-62:20
-74            android:name="com.example.icslauncher.settings.WelcomeActivity"
-74-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:52:13-53
-75            android:exported="true"
-75-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:56:13-36
-76            android:label="@string/app_name"
-76-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:53:13-45
-77            android:screenOrientation="unspecified"
-77-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:55:13-52
-78            android:theme="@style/Theme.ICSLauncher" >
-78-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:54:13-53
-79            <intent-filter>
-79-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:57:13-61:29
-80                <action android:name="android.intent.action.MAIN" />
-80-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:58:17-68
-80-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:58:25-66
-81
-82                <category android:name="android.intent.category.HOME" />
-82-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:59:17-72
-82-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:59:27-70
-83                <category android:name="android.intent.category.DEFAULT" />
-83-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:60:17-75
-83-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:60:27-73
-84            </intent-filter>
-85        </activity>
-86
-87        <!-- Launcher (home screen) — opened from welcome or directly. -->
-88        <activity
-88-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:65:9-76:20
-89            android:name="com.example.icslauncher.launcher.ICSLauncherActivity"
-89-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:66:13-57
-90            android:exported="true"
-90-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:71:13-36
-91            android:label="@string/app_name"
-91-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:67:13-45
-92            android:launchMode="singleTask"
-92-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:69:13-44
-93            android:screenOrientation="unspecified"
-93-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:68:13-52
-94            android:windowSoftInputMode="adjustResize|stateUnspecified" >
-94-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:70:13-72
-95            <intent-filter>
-95-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:72:13-75:29
-96                <action android:name="android.intent.action.MAIN" />
-96-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:58:17-68
-96-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:58:25-66
-97
-98                <category android:name="android.intent.category.DEFAULT" />
-98-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:60:17-75
-98-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:60:27-73
-99            </intent-filter>
-100        </activity>
+55    <permission
+55-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+56        android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+56-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+57        android:protectionLevel="signature" />
+57-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+58
+59    <uses-permission android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+59-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+59-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+60
+61    <application
+61-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-299:19
+62        android:name="com.example.icslauncher.ICSApplication"
+62-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:42:9-39
+63        android:allowBackup="true"
+63-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:43:9-35
+64        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+64-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+65        android:debuggable="true"
+66        android:extractNativeLibs="false"
+67        android:hardwareAccelerated="true"
+67-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:48:9-43
+68        android:icon="@drawable/ic_launcher"
+68-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:44:9-45
+69        android:label="@string/app_name"
+69-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:46:9-41
+70        android:resizeableActivity="true"
+70-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:50:9-42
+71        android:roundIcon="@drawable/ic_launcher_round"
+71-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:45:9-56
+72        android:theme="@style/Theme.ICSLauncher"
+72-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:47:9-49
+73        android:usesCleartextTraffic="false"
+73-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:49:9-45
+74        android:windowSoftInputMode="stateUnspecified" >
+74-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:51:9-55
+75
+76        <!-- Welcome screen (first-run) — registered as HOME entry point. -->
+77        <activity
+77-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:54:9-65:20
+78            android:name="com.example.icslauncher.settings.WelcomeActivity"
+78-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:55:13-53
+79            android:exported="true"
+79-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:59:13-36
+80            android:label="@string/app_name"
+80-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:56:13-45
+81            android:screenOrientation="unspecified"
+81-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:58:13-52
+82            android:theme="@style/Theme.ICSLauncher" >
+82-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:57:13-53
+83            <intent-filter>
+83-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:60:13-64:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:61:17-68
+84-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:61:25-66
+85
+86                <category android:name="android.intent.category.HOME" />
+86-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:62:17-72
+86-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:62:27-70
+87                <category android:name="android.intent.category.DEFAULT" />
+87-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:63:17-75
+87-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:63:27-73
+88            </intent-filter>
+89        </activity>
+90
+91        <!-- Launcher (home screen) — opened from welcome or directly. -->
+92        <activity
+92-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:68:9-79:20
+93            android:name="com.example.icslauncher.launcher.ICSLauncherActivity"
+93-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:69:13-57
+94            android:exported="true"
+94-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:74:13-36
+95            android:label="@string/app_name"
+95-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:70:13-45
+96            android:launchMode="singleTask"
+96-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:72:13-44
+97            android:screenOrientation="unspecified"
+97-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:71:13-52
+98            android:windowSoftInputMode="adjustResize|stateUnspecified" >
+98-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:73:13-72
+99            <intent-filter>
+99-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:75:13-78:29
+100                <action android:name="android.intent.action.MAIN" />
+100-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:61:17-68
+100-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:61:25-66
 101
-102        <!-- App drawer (full list of installed launcher apps). -->
-103        <activity
-103-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:79:9-84:38
-104            android:name="com.example.icslauncher.drawer.AppDrawerActivity"
-104-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:80:13-53
-105            android:exported="true"
-105-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:84:13-36
-106            android:label="@string/app_drawer"
-106-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:81:13-47
-107            android:screenOrientation="unspecified"
-107-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:83:13-52
-108            android:theme="@style/Theme.ICSLauncher" />
-108-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:82:13-53
-109
-110        <!-- Wallpaper picker (static + live wallpaper selection). -->
-111        <activity
-111-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:87:9-92:38
-112            android:name="com.example.icslauncher.wallpaper.WallpaperPickerActivity"
-112-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:88:13-62
-113            android:exported="true"
-113-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:92:13-36
-114            android:label="@string/wallpaper"
-114-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:89:13-46
-115            android:screenOrientation="unspecified"
-115-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:91:13-52
-116            android:theme="@style/Theme.ICSLauncher" />
-116-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:90:13-53
-117
-118        <!-- ICS Easter egg (self-contained activity). -->
-119        <activity
-119-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:95:9-100:38
-120            android:name="com.example.icslauncher.easteregg.EasterEggActivity"
-120-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:96:13-56
-121            android:exported="true"
-121-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:100:13-36
-122            android:label="@string/easter_egg"
-122-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:97:13-47
-123            android:screenOrientation="unspecified"
-123-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:99:13-52
-124            android:theme="@style/Theme.ICSLauncher.Dialog" />
-124-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:98:13-60
-125
-126        <!-- Settings (grid size, dark theme, ...). -->
-127        <activity
-127-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:103:9-108:38
-128            android:name="com.example.icslauncher.settings.SettingsActivity"
-128-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:104:13-54
-129            android:exported="true"
-129-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:108:13-36
-130            android:label="@string/settings"
-130-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:105:13-45
-131            android:screenOrientation="unspecified"
-131-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:107:13-52
-132            android:theme="@style/Theme.ICSLauncher" />
-132-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:106:13-53
-133
-134        <!-- About screen. -->
-135        <activity
-135-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:111:9-116:38
-136            android:name="com.example.icslauncher.settings.AboutActivity"
-136-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:112:13-51
-137            android:exported="true"
-137-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:116:13-36
-138            android:label="@string/settings_about"
-138-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:113:13-51
-139            android:screenOrientation="unspecified"
-139-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:115:13-52
-140            android:theme="@style/Theme.ICSLauncher" />
-140-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:114:13-53
-141
-142        <!-- Quick Settings panel. -->
-143        <activity
-143-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:119:9-124:38
-144            android:name="com.example.icslauncher.settings.QuickSettingsActivity"
-144-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:120:13-59
-145            android:exported="true"
-145-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:124:13-36
-146            android:label="@string/quick_settings"
-146-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:121:13-51
-147            android:screenOrientation="unspecified"
-147-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:123:13-52
-148            android:theme="@style/Theme.ICSLauncher" />
-148-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:122:13-53
-149
-150        <!--
-151             =====================================================================
-152             NEXUS-ERA APPS (reimplemented, not copied from system images)
-153             =====================================================================
-154        -->
-155        <activity
-155-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:129:9-134:38
-156            android:name="com.example.icslauncher.apps.ICSMusicActivity"
-156-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:130:13-50
-157            android:exported="true"
-157-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:134:13-36
-158            android:label="@string/app_music"
-158-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:131:13-46
-159            android:screenOrientation="unspecified"
-159-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:133:13-52
-160            android:theme="@style/Theme.ICSLauncher" />
-160-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:132:13-53
-161        <activity
-161-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:135:9-140:38
-162            android:name="com.example.icslauncher.apps.ICSGalleryActivity"
-162-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:136:13-52
-163            android:exported="true"
-163-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:140:13-36
-164            android:label="@string/app_gallery"
-164-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:137:13-48
-165            android:screenOrientation="unspecified"
-165-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:139:13-52
-166            android:theme="@style/Theme.ICSLauncher" />
-166-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:138:13-53
-167        <activity
-167-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:141:9-146:38
-168            android:name="com.example.icslauncher.apps.ICSCameraActivity"
-168-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:142:13-51
-169            android:exported="true"
-169-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:146:13-36
-170            android:label="@string/app_camera"
-170-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:143:13-47
-171            android:screenOrientation="sensor"
-171-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:145:13-47
-172            android:theme="@style/Theme.ICSLauncher.NoActionBar" />
-172-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:144:13-65
-173        <activity
-173-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:147:9-152:38
-174            android:name="com.example.icslauncher.apps.ICSCalculatorActivity"
-174-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:148:13-55
-175            android:exported="true"
-175-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:152:13-36
-176            android:label="@string/app_calculator"
-176-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:149:13-51
-177            android:screenOrientation="unspecified"
-177-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:151:13-52
-178            android:theme="@style/Theme.ICSLauncher" />
-178-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:150:13-53
-179        <activity
-179-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:153:9-158:38
-180            android:name="com.example.icslauncher.apps.ICSClockActivity"
-180-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:154:13-50
-181            android:exported="true"
-181-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:158:13-36
-182            android:label="@string/app_clock"
-182-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:155:13-46
-183            android:screenOrientation="unspecified"
-183-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:157:13-52
-184            android:theme="@style/Theme.ICSLauncher" />
-184-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:156:13-53
-185        <activity
-185-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:159:9-164:38
-186            android:name="com.example.icslauncher.apps.ISBrowserActivity"
-186-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:160:13-51
-187            android:exported="true"
-187-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:164:13-36
-188            android:label="@string/app_browser"
-188-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:161:13-48
-189            android:screenOrientation="unspecified"
-189-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:163:13-52
-190            android:theme="@style/Theme.ICSLauncher.NoActionBar" />
-190-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:162:13-65
-191        <activity
-191-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:165:9-170:38
-192            android:name="com.example.icslauncher.apps.ISEmailActivity"
-192-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:166:13-49
-193            android:exported="true"
-193-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:170:13-36
-194            android:label="@string/app_email"
-194-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:167:13-46
-195            android:screenOrientation="unspecified"
-195-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:169:13-52
-196            android:theme="@style/Theme.ICSLauncher" />
-196-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:168:13-53
-197        <activity
-197-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:171:9-176:38
-198            android:name="com.example.icslauncher.apps.ICSContactsActivity"
-198-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:172:13-53
-199            android:exported="true"
-199-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:176:13-36
-200            android:label="@string/app_contacts"
-200-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:173:13-49
-201            android:screenOrientation="unspecified"
-201-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:175:13-52
-202            android:theme="@style/Theme.ICSLauncher" />
-202-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:174:13-53
-203        <activity
-203-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:177:9-182:38
-204            android:name="com.example.icslauncher.apps.ICSCalendarActivity"
-204-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:178:13-53
-205            android:exported="true"
-205-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:182:13-36
-206            android:label="@string/app_calendar"
-206-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:179:13-49
-207            android:screenOrientation="unspecified"
-207-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:181:13-52
-208            android:theme="@style/Theme.ICSLauncher" />
-208-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:180:13-53
-209        <activity
-209-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:183:9-188:38
-210            android:name="com.example.icslauncher.apps.ICSMessagingActivity"
-210-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:184:13-54
-211            android:exported="true"
-211-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:188:13-36
-212            android:label="@string/app_messaging"
-212-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:185:13-50
-213            android:screenOrientation="unspecified"
-213-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:187:13-52
-214            android:theme="@style/Theme.ICSLauncher" />
-214-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:186:13-53
-215
-216        <!-- Photo viewer (opened from Gallery). -->
-217        <activity
-217-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:191:9-196:38
-218            android:name="com.example.icslauncher.apps.ICSPhotoViewActivity"
-218-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:192:13-54
-219            android:exported="true"
-219-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:196:13-36
-220            android:label="@string/app_gallery"
-220-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:193:13-48
-221            android:screenOrientation="unspecified"
-221-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:195:13-52
-222            android:theme="@style/Theme.ICSLauncher.NoActionBar" />
-222-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:194:13-65
-223
-224        <!-- Notes app. -->
-225        <activity
-225-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:199:9-204:38
-226            android:name="com.example.icslauncher.apps.ICSNotesActivity"
-226-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:200:13-50
-227            android:exported="true"
-227-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:204:13-36
-228            android:label="@string/app_notes"
-228-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:201:13-46
-229            android:screenOrientation="unspecified"
-229-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:203:13-52
-230            android:theme="@style/Theme.ICSLauncher" />
-230-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:202:13-53
-231
-232        <!-- File Manager app. -->
-233        <activity
-233-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:207:9-212:38
-234            android:name="com.example.icslauncher.apps.ICSFileManagerActivity"
-234-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:208:13-56
-235            android:exported="true"
-235-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:212:13-36
-236            android:label="@string/app_file_manager"
-236-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:209:13-53
-237            android:screenOrientation="unspecified"
-237-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:211:13-52
-238            android:theme="@style/Theme.ICSLauncher" />
-238-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:210:13-53
-239
-240        <!-- Settings app. -->
-241        <activity
-241-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:215:9-220:38
-242            android:name="com.example.icslauncher.apps.ICSSettingsActivity"
-242-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:216:13-53
-243            android:exported="true"
-243-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:220:13-36
-244            android:label="@string/app_settings"
-244-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:217:13-49
-245            android:screenOrientation="unspecified"
-245-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:219:13-52
-246            android:theme="@style/Theme.ICSLauncher" />
-246-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:218:13-53
-247
-248        <!-- App Info activity. -->
-249        <activity
-249-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:223:9-228:38
-250            android:name="com.example.icslauncher.apps.ICSAppInfoActivity"
-250-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:224:13-52
-251            android:exported="true"
-251-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:228:13-36
-252            android:label="@string/app_info"
-252-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:225:13-45
-253            android:screenOrientation="unspecified"
-253-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:227:13-52
-254            android:theme="@style/Theme.ICSLauncher" />
-254-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:226:13-53
-255
-256        <!-- Frequent Apps activity. -->
-257        <activity
-257-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:231:9-236:38
-258            android:name="com.example.icslauncher.apps.ICSFrequentAppsActivity"
-258-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:232:13-57
-259            android:exported="true"
-259-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:236:13-36
-260            android:label="@string/app_frequent_apps"
-260-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:233:13-54
-261            android:screenOrientation="unspecified"
-261-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:235:13-52
-262            android:theme="@style/Theme.ICSLauncher" />
-262-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:234:13-53
-263
-264        <!-- Recent Apps activity. -->
-265        <activity
-265-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:239:9-244:38
-266            android:name="com.example.icslauncher.apps.ICSRecentAppsActivity"
-266-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:240:13-55
-267            android:exported="true"
-267-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:244:13-36
-268            android:label="@string/app_recent_apps"
-268-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:241:13-52
-269            android:screenOrientation="unspecified"
-269-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:243:13-52
-270            android:theme="@style/Theme.ICSLauncher" />
-270-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:242:13-53
-271
-272        <!-- Search activity. -->
-273        <activity
-273-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:247:9-252:38
-274            android:name="com.example.icslauncher.apps.ICSSearchActivity"
-274-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:248:13-51
-275            android:exported="true"
-275-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:252:13-36
-276            android:label="@string/app_search"
-276-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:249:13-47
-277            android:screenOrientation="unspecified"
-277-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:251:13-52
-278            android:theme="@style/Theme.ICSLauncher" />
-278-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:250:13-53
-279
-280        <!-- Device Info activity. -->
-281        <activity
-281-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:255:9-260:38
-282            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
-282-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:256:13-55
-283            android:exported="true"
-283-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:260:13-36
-284            android:label="@string/app_device_info"
-284-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:257:13-52
-285            android:screenOrientation="unspecified"
-285-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:259:13-52
-286            android:theme="@style/Theme.ICSLauncher" />
-286-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:258:13-53
-287
-288        <!-- Clock widget provider. -->
-289        <receiver
-289-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:263:9-272:20
-290            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
-290-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:264:13-56
-291            android:exported="true" >
-291-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:265:13-36
-292            <intent-filter>
-292-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:266:13-268:29
-293                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-293-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:267:17-83
-293-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:267:25-81
-294            </intent-filter>
-295
-296            <meta-data
-296-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:269:13-271:60
-297                android:name="android.appwidget.provider"
-297-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:270:17-58
-298                android:resource="@xml/widget_clock_info" />
-298-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:271:17-58
-299        </receiver>
-300
-301        <!--
-302             =====================================================================
-303             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
-304             =====================================================================
-305        -->
-306        <service
-306-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:277:9-287:19
-307            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
-307-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:278:13-58
-308            android:exported="true"
-308-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:280:13-36
-309            android:permission="android.permission.BIND_WALLPAPER" >
-309-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:279:13-67
-310            <intent-filter>
-310-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:281:13-283:29
-311                <action android:name="android.service.wallpaper.WallpaperService" />
-311-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:282:17-84
-311-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:282:25-82
-312            </intent-filter>
-313
-314            <meta-data
-314-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:284:13-286:52
-315                android:name="android.service.wallpaper"
-315-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:285:17-57
-316                android:resource="@xml/wallpaper" />
-316-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:286:17-50
-317        </service>
-318
-319        <provider
-319-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-320            android:name="androidx.startup.InitializationProvider"
-320-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
-321            android:authorities="com.example.icslauncher.androidx-startup"
-321-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
-322            android:exported="false" >
-322-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
-323            <meta-data
-323-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-324                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-324-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
-325                android:value="androidx.startup" />
-325-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+102                <category android:name="android.intent.category.DEFAULT" />
+102-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:63:17-75
+102-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:63:27-73
+103            </intent-filter>
+104        </activity>
+105
+106        <!-- App drawer (full list of installed launcher apps). -->
+107        <activity
+107-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:82:9-87:38
+108            android:name="com.example.icslauncher.drawer.AppDrawerActivity"
+108-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:83:13-53
+109            android:exported="true"
+109-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:87:13-36
+110            android:label="@string/app_drawer"
+110-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:84:13-47
+111            android:screenOrientation="unspecified"
+111-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:86:13-52
+112            android:theme="@style/Theme.ICSLauncher" />
+112-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:85:13-53
+113
+114        <!-- Wallpaper picker (static + live wallpaper selection). -->
+115        <activity
+115-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:90:9-95:38
+116            android:name="com.example.icslauncher.wallpaper.WallpaperPickerActivity"
+116-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:91:13-62
+117            android:exported="true"
+117-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:95:13-36
+118            android:label="@string/wallpaper"
+118-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:92:13-46
+119            android:screenOrientation="unspecified"
+119-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:94:13-52
+120            android:theme="@style/Theme.ICSLauncher" />
+120-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:93:13-53
+121
+122        <!-- ICS Easter egg (self-contained activity). -->
+123        <activity
+123-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:98:9-103:38
+124            android:name="com.example.icslauncher.easteregg.EasterEggActivity"
+124-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:99:13-56
+125            android:exported="true"
+125-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:103:13-36
+126            android:label="@string/easter_egg"
+126-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:100:13-47
+127            android:screenOrientation="unspecified"
+127-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:102:13-52
+128            android:theme="@style/Theme.ICSLauncher.Dialog" />
+128-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:101:13-60
+129
+130        <!-- Settings (grid size, dark theme, ...). -->
+131        <activity
+131-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:106:9-111:38
+132            android:name="com.example.icslauncher.settings.SettingsActivity"
+132-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:107:13-54
+133            android:exported="true"
+133-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:111:13-36
+134            android:label="@string/settings"
+134-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:108:13-45
+135            android:screenOrientation="unspecified"
+135-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:110:13-52
+136            android:theme="@style/Theme.ICSLauncher" />
+136-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:109:13-53
+137
+138        <!-- About screen. -->
+139        <activity
+139-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:114:9-119:38
+140            android:name="com.example.icslauncher.settings.AboutActivity"
+140-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:115:13-51
+141            android:exported="true"
+141-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:119:13-36
+142            android:label="@string/settings_about"
+142-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:116:13-51
+143            android:screenOrientation="unspecified"
+143-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:118:13-52
+144            android:theme="@style/Theme.ICSLauncher" />
+144-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:117:13-53
+145
+146        <!-- Quick Settings panel. -->
+147        <activity
+147-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:122:9-127:38
+148            android:name="com.example.icslauncher.settings.QuickSettingsActivity"
+148-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:123:13-59
+149            android:exported="true"
+149-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:127:13-36
+150            android:label="@string/quick_settings"
+150-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:124:13-51
+151            android:screenOrientation="unspecified"
+151-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:126:13-52
+152            android:theme="@style/Theme.ICSLauncher" />
+152-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:125:13-53
+153
+154        <!--
+155             =====================================================================
+156             NEXUS-ERA APPS (reimplemented, not copied from system images)
+157             =====================================================================
+158        -->
+159        <activity
+159-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:132:9-137:38
+160            android:name="com.example.icslauncher.apps.ICSMusicActivity"
+160-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:133:13-50
+161            android:exported="true"
+161-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:137:13-36
+162            android:label="@string/app_music"
+162-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:134:13-46
+163            android:screenOrientation="unspecified"
+163-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:136:13-52
+164            android:theme="@style/Theme.ICSLauncher" />
+164-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:135:13-53
+165        <activity
+165-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:138:9-143:38
+166            android:name="com.example.icslauncher.apps.ICSGalleryActivity"
+166-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:139:13-52
+167            android:exported="true"
+167-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:143:13-36
+168            android:label="@string/app_gallery"
+168-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:140:13-48
+169            android:screenOrientation="unspecified"
+169-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:142:13-52
+170            android:theme="@style/Theme.ICSLauncher" />
+170-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:141:13-53
+171        <activity
+171-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:144:9-149:38
+172            android:name="com.example.icslauncher.apps.ICSCameraActivity"
+172-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:145:13-51
+173            android:exported="true"
+173-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:149:13-36
+174            android:label="@string/app_camera"
+174-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:146:13-47
+175            android:screenOrientation="sensor"
+175-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:148:13-47
+176            android:theme="@style/Theme.ICSLauncher.NoActionBar" />
+176-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:147:13-65
+177        <activity
+177-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:150:9-155:38
+178            android:name="com.example.icslauncher.apps.ICSCalculatorActivity"
+178-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:151:13-55
+179            android:exported="true"
+179-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:155:13-36
+180            android:label="@string/app_calculator"
+180-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:152:13-51
+181            android:screenOrientation="unspecified"
+181-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:154:13-52
+182            android:theme="@style/Theme.ICSLauncher" />
+182-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:153:13-53
+183        <activity
+183-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:156:9-161:38
+184            android:name="com.example.icslauncher.apps.ICSClockActivity"
+184-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:157:13-50
+185            android:exported="true"
+185-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:161:13-36
+186            android:label="@string/app_clock"
+186-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:158:13-46
+187            android:screenOrientation="unspecified"
+187-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:160:13-52
+188            android:theme="@style/Theme.ICSLauncher" />
+188-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:159:13-53
+189        <activity
+189-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:162:9-167:38
+190            android:name="com.example.icslauncher.apps.ISBrowserActivity"
+190-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:163:13-51
+191            android:exported="true"
+191-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:167:13-36
+192            android:label="@string/app_browser"
+192-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:164:13-48
+193            android:screenOrientation="unspecified"
+193-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:166:13-52
+194            android:theme="@style/Theme.ICSLauncher.NoActionBar" />
+194-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:165:13-65
+195        <activity
+195-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:168:9-173:38
+196            android:name="com.example.icslauncher.apps.ISEmailActivity"
+196-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:169:13-49
+197            android:exported="true"
+197-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:173:13-36
+198            android:label="@string/app_email"
+198-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:170:13-46
+199            android:screenOrientation="unspecified"
+199-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:172:13-52
+200            android:theme="@style/Theme.ICSLauncher" />
+200-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:171:13-53
+201        <activity
+201-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:174:9-179:38
+202            android:name="com.example.icslauncher.apps.ICSContactsActivity"
+202-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:175:13-53
+203            android:exported="true"
+203-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:179:13-36
+204            android:label="@string/app_contacts"
+204-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:176:13-49
+205            android:screenOrientation="unspecified"
+205-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:178:13-52
+206            android:theme="@style/Theme.ICSLauncher" />
+206-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:177:13-53
+207        <activity
+207-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:180:9-185:38
+208            android:name="com.example.icslauncher.apps.ICSCalendarActivity"
+208-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:181:13-53
+209            android:exported="true"
+209-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:185:13-36
+210            android:label="@string/app_calendar"
+210-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:182:13-49
+211            android:screenOrientation="unspecified"
+211-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:184:13-52
+212            android:theme="@style/Theme.ICSLauncher" />
+212-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:183:13-53
+213        <activity
+213-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:186:9-191:38
+214            android:name="com.example.icslauncher.apps.ICSMessagingActivity"
+214-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:187:13-54
+215            android:exported="true"
+215-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:191:13-36
+216            android:label="@string/app_messaging"
+216-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:188:13-50
+217            android:screenOrientation="unspecified"
+217-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:190:13-52
+218            android:theme="@style/Theme.ICSLauncher" />
+218-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:189:13-53
+219
+220        <!-- Photo viewer (opened from Gallery). -->
+221        <activity
+221-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:194:9-199:38
+222            android:name="com.example.icslauncher.apps.ICSPhotoViewActivity"
+222-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:195:13-54
+223            android:exported="true"
+223-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:199:13-36
+224            android:label="@string/app_gallery"
+224-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:196:13-48
+225            android:screenOrientation="unspecified"
+225-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:198:13-52
+226            android:theme="@style/Theme.ICSLauncher.NoActionBar" />
+226-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:197:13-65
+227
+228        <!-- Notes app. -->
+229        <activity
+229-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:202:9-207:38
+230            android:name="com.example.icslauncher.apps.ICSNotesActivity"
+230-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:203:13-50
+231            android:exported="true"
+231-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:207:13-36
+232            android:label="@string/app_notes"
+232-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:204:13-46
+233            android:screenOrientation="unspecified"
+233-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:206:13-52
+234            android:theme="@style/Theme.ICSLauncher" />
+234-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:205:13-53
+235
+236        <!-- File Manager app. -->
+237        <activity
+237-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:210:9-215:38
+238            android:name="com.example.icslauncher.apps.ICSFileManagerActivity"
+238-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:211:13-56
+239            android:exported="true"
+239-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:215:13-36
+240            android:label="@string/app_file_manager"
+240-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:212:13-53
+241            android:screenOrientation="unspecified"
+241-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:214:13-52
+242            android:theme="@style/Theme.ICSLauncher" />
+242-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:213:13-53
+243
+244        <!-- Settings app. -->
+245        <activity
+245-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:218:9-223:38
+246            android:name="com.example.icslauncher.apps.ICSSettingsActivity"
+246-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:219:13-53
+247            android:exported="true"
+247-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:223:13-36
+248            android:label="@string/app_settings"
+248-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:220:13-49
+249            android:screenOrientation="unspecified"
+249-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:222:13-52
+250            android:theme="@style/Theme.ICSLauncher" />
+250-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:221:13-53
+251
+252        <!-- App Info activity. -->
+253        <activity
+253-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:226:9-231:38
+254            android:name="com.example.icslauncher.apps.ICSAppInfoActivity"
+254-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:227:13-52
+255            android:exported="true"
+255-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:231:13-36
+256            android:label="@string/app_info"
+256-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:228:13-45
+257            android:screenOrientation="unspecified"
+257-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:230:13-52
+258            android:theme="@style/Theme.ICSLauncher" />
+258-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:229:13-53
+259
+260        <!-- Frequent Apps activity. -->
+261        <activity
+261-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:234:9-239:38
+262            android:name="com.example.icslauncher.apps.ICSFrequentAppsActivity"
+262-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:235:13-57
+263            android:exported="true"
+263-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:239:13-36
+264            android:label="@string/app_frequent_apps"
+264-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:236:13-54
+265            android:screenOrientation="unspecified"
+265-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:238:13-52
+266            android:theme="@style/Theme.ICSLauncher" />
+266-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:237:13-53
+267
+268        <!-- Recent Apps activity. -->
+269        <activity
+269-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:242:9-247:38
+270            android:name="com.example.icslauncher.apps.ICSRecentAppsActivity"
+270-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:243:13-55
+271            android:exported="true"
+271-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:247:13-36
+272            android:label="@string/app_recent_apps"
+272-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:244:13-52
+273            android:screenOrientation="unspecified"
+273-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:246:13-52
+274            android:theme="@style/Theme.ICSLauncher" />
+274-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:245:13-53
+275
+276        <!-- Search activity. -->
+277        <activity
+277-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:250:9-255:38
+278            android:name="com.example.icslauncher.apps.ICSSearchActivity"
+278-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:251:13-51
+279            android:exported="true"
+279-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:255:13-36
+280            android:label="@string/app_search"
+280-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:252:13-47
+281            android:screenOrientation="unspecified"
+281-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:254:13-52
+282            android:theme="@style/Theme.ICSLauncher" />
+282-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:253:13-53
+283
+284        <!-- Sound Recorder activity. -->
+285        <activity
+285-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:258:9-263:38
+286            android:name="com.example.icslauncher.apps.ICSSoundRecorderActivity"
+286-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:259:13-58
+287            android:exported="true"
+287-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:263:13-36
+288            android:label="@string/app_sound_recorder"
+288-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:260:13-55
+289            android:screenOrientation="unspecified"
+289-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:262:13-52
+290            android:theme="@style/Theme.ICSLauncher" />
+290-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:261:13-53
+291
+292        <!-- Device Info activity. -->
+293        <activity
+293-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:266:9-271:38
+294            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
+294-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:267:13-55
+295            android:exported="true"
+295-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:271:13-36
+296            android:label="@string/app_device_info"
+296-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:268:13-52
+297            android:screenOrientation="unspecified"
+297-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:270:13-52
+298            android:theme="@style/Theme.ICSLauncher" />
+298-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:269:13-53
+299
+300        <!-- Clock widget provider. -->
+301        <receiver
+301-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:274:9-283:20
+302            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
+302-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:275:13-56
+303            android:exported="true" >
+303-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:276:13-36
+304            <intent-filter>
+304-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:277:13-279:29
+305                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+305-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:278:17-83
+305-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:278:25-81
+306            </intent-filter>
+307
+308            <meta-data
+308-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:280:13-282:60
+309                android:name="android.appwidget.provider"
+309-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:281:17-58
+310                android:resource="@xml/widget_clock_info" />
+310-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:282:17-58
+311        </receiver>
+312
+313        <!--
+314             =====================================================================
+315             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
+316             =====================================================================
+317        -->
+318        <service
+318-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:288:9-298:19
+319            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
+319-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:289:13-58
+320            android:exported="true"
+320-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:291:13-36
+321            android:permission="android.permission.BIND_WALLPAPER" >
+321-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:290:13-67
+322            <intent-filter>
+322-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:292:13-294:29
+323                <action android:name="android.service.wallpaper.WallpaperService" />
+323-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:293:17-84
+323-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:293:25-82
+324            </intent-filter>
+325
 326            <meta-data
-326-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-327                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-327-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-328                android:value="androidx.startup" />
-328-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-329            <meta-data
-329-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-330                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-330-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-331                android:value="androidx.startup" />
-331-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-332        </provider>
-333
-334        <uses-library
-334-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
-335            android:name="androidx.window.extensions"
-335-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
-336            android:required="false" />
-336-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
-337        <uses-library
-337-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
-338            android:name="androidx.window.sidecar"
-338-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
-339            android:required="false" />
-339-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
-340
-341        <receiver
-341-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-342            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-342-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-343            android:directBootAware="false"
-343-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-344            android:enabled="true"
-344-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-345            android:exported="true"
-345-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-346            android:permission="android.permission.DUMP" >
-346-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-347            <intent-filter>
-347-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-348                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-348-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-348-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-349            </intent-filter>
-350            <intent-filter>
-350-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-351                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-351-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-351-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-352            </intent-filter>
-353            <intent-filter>
-353-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-354                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-354-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-354-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-355            </intent-filter>
-356            <intent-filter>
-356-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-357                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-357-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-357-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-358            </intent-filter>
-359        </receiver>
-360    </application>
-361
-362</manifest>
+326-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:295:13-297:52
+327                android:name="android.service.wallpaper"
+327-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:296:17-57
+328                android:resource="@xml/wallpaper" />
+328-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:297:17-50
+329        </service>
+330
+331        <provider
+331-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+332            android:name="androidx.startup.InitializationProvider"
+332-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+333            android:authorities="com.example.icslauncher.androidx-startup"
+333-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+334            android:exported="false" >
+334-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+335            <meta-data
+335-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+336                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+336-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+337                android:value="androidx.startup" />
+337-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+338            <meta-data
+338-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+339                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+339-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+340                android:value="androidx.startup" />
+340-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+341            <meta-data
+341-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+342                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+342-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+343                android:value="androidx.startup" />
+343-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+344        </provider>
+345
+346        <uses-library
+346-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+347            android:name="androidx.window.extensions"
+347-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+348            android:required="false" />
+348-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+349        <uses-library
+349-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+350            android:name="androidx.window.sidecar"
+350-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+351            android:required="false" />
+351-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+352
+353        <receiver
+353-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+354            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+355            android:directBootAware="false"
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+356            android:enabled="true"
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+357            android:exported="true"
+357-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+358            android:permission="android.permission.DUMP" >
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+359            <intent-filter>
+359-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+360                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+360-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+360-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+361            </intent-filter>
+362            <intent-filter>
+362-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+363                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+364            </intent-filter>
+365            <intent-filter>
+365-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+366                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+366-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+366-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+367            </intent-filter>
+368            <intent-filter>
+368-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+369                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+369-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+369-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+370            </intent-filter>
+371        </receiver>
+372    </application>
+373
+374</manifest>

@@ -771,6 +771,7 @@
     <string name="app_recent_apps">Recent Apps</string>
     <string name="app_search">Search</string>
     <string name="app_settings">Settings</string>
+    <string name="app_sound_recorder">Sound Recorder</string>
     <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_video_action">Video</string>
     <string name="call_notification_decline_action">Decline</string>

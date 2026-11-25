@@ -1606,6 +1606,7 @@ string app_notes
 string app_recent_apps
 string app_search
 string app_settings
+string app_sound_recorder
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action

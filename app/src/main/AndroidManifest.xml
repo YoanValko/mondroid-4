@@ -29,6 +29,9 @@
     <!-- Clock / alarm reimplementation -->
     <uses-permission android:name="android.permission.SET_ALARM"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
 
     <!-- Hardware features used by the app (camera is optional so the app installs on
          devices without a rear camera). -->
@@ -247,6 +250,14 @@
         <activity
             android:name=".apps.ICSSearchActivity"
             android:label="@string/app_search"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
+        <!-- Sound Recorder activity. -->
+        <activity
+            android:name=".apps.ICSSoundRecorderActivity"
+            android:label="@string/app_sound_recorder"
             android:theme="@style/Theme.ICSLauncher"
             android:screenOrientation="unspecified"
             android:exported="true"/>
