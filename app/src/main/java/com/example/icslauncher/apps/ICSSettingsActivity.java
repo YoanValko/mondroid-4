@@ -42,6 +42,14 @@ public class ICSSettingsActivity extends AppCompatActivity implements View.OnCli
         addSettingRow(root, "Accounts & sync", Settings.ACTION_SYNC_SETTINGS);
         addSettingRow(root, "Privacy", Settings.ACTION_PRIVACY_SETTINGS);
         addSettingRow(root, "Storage", Settings.ACTION_INTERNAL_STORAGE_SETTINGS);
+        addSettingRow(root, "Battery", Settings.ACTION_BATTERY_SAVER_SETTINGS);
+        addSettingRow(root, "About phone", Settings.ACTION_DEVICE_INFO_SETTINGS);
+        addSettingRow(root, "Sound", Settings.ACTION_SOUND_SETTINGS);
+        addSettingRow(root, "Location & security", Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+        addSettingRow(root, "Applications", Settings.ACTION_APPLICATION_SETTINGS);
+        addSettingRow(root, "Accounts & sync", Settings.ACTION_SYNC_SETTINGS);
+        addSettingRow(root, "Privacy", Settings.ACTION_PRIVACY_SETTINGS);
+        addSettingRow(root, "Storage", Settings.ACTION_INTERNAL_STORAGE_SETTINGS);
         addSettingRow(root, "About phone", Settings.ACTION_DEVICE_INFO_SETTINGS);
 
         setContentView(root);
