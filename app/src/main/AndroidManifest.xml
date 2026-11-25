@@ -235,6 +235,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Device Info activity. -->
+        <activity
+            android:name=".apps.ICSDeviceInfoActivity"
+            android:label="@string/app_device_info"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Clock widget provider. -->
         <receiver
             android:name=".apps.ICSClockWidgetProvider"

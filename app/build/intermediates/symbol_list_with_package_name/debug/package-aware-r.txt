@@ -1592,6 +1592,7 @@ string app_calendar
 string app_camera
 string app_clock
 string app_contacts
+string app_device_info
 string app_drawer
 string app_email
 string app_file_manager

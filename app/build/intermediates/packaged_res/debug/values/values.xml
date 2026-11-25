@@ -57,6 +57,7 @@
     <string name="app_camera">Camera</string>
     <string name="app_clock">Clock</string>
     <string name="app_contacts">Contacts</string>
+    <string name="app_device_info">Device Info</string>
     <string name="app_drawer">Apps</string>
     <string name="app_email">Email</string>
     <string name="app_file_manager">File Manager</string>
