@@ -94,6 +94,7 @@ public class ICSLauncherActivity extends AppCompatActivity {
     private WorkspacePagerAdapter pagerAdapter;
     private LinearLayout pageIndicator;
     private AppFrequencyTracker freqTracker;
+    private AppRecencyTracker recencyTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +109,7 @@ public class ICSLauncherActivity extends AppCompatActivity {
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         gridSpan = Integer.parseInt(prefs.getString("grid_size", String.valueOf(4)));
         freqTracker = new AppFrequencyTracker(this);
+        recencyTracker = new AppRecencyTracker(this);
 
         // Search bar.
         SearchView searchBar = findViewById(R.id.search_bar);
@@ -316,9 +318,10 @@ public class ICSLauncherActivity extends AppCompatActivity {
 
     /** Launch the selected shortcut. Falls back gracefully if the component cannot resolve. */
     private void launchApp(AppModel app) {
-        // Record launch frequency
+        // Record launch frequency and recency
         if (app.packageName != null) {
             freqTracker.recordLaunch(app.packageName);
+            recencyTracker.recordLaunch(app.packageName);
         }
         Intent intent;
         if (app.component != null) {
