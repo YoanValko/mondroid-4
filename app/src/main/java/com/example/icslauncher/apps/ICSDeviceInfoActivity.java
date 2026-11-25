@@ -2,6 +2,8 @@ package com.example.icslauncher.apps;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.StatFs;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -51,6 +53,19 @@ public class ICSDeviceInfoActivity extends AppCompatActivity {
         addInfoRow(root, "Serial", Build.SERIAL);
         addInfoRow(root, "Time", String.valueOf(Build.TIME));
 
+        // Storage info
+        try {
+            StatFs stat = new StatFs(Environment.getExternalStorageDirectory().getPath());
+            long total = stat.getTotalBytes();
+            long free = stat.getFreeBytes();
+            long used = total - free;
+            addInfoRow(root, "Storage Total", formatBytes(total));
+            addInfoRow(root, "Storage Used", formatBytes(used));
+            addInfoRow(root, "Storage Free", formatBytes(free));
+        } catch (Exception e) {
+            addInfoRow(root, "Storage", "N/A");
+        }
+
         Button btnOk = new Button(this);
         btnOk.setText("OK");
         btnOk.setOnClickListener(v -> finish());
@@ -83,5 +98,12 @@ public class ICSDeviceInfoActivity extends AppCompatActivity {
         row.addView(lbl);
         row.addView(val);
         root.addView(row);
+    }
+
+    private String formatBytes(long bytes) {
+        if (bytes < 1024) return bytes + " B";
+        int exp = (int) (Math.log(bytes) / Math.log(1024));
+        String[] units = {"B", "KB", "MB", "GB", "TB"};
+        return String.format("%.2f %s", bytes / Math.pow(1024, exp), units[exp]);
     }
 }
