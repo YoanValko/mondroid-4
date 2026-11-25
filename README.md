@@ -143,9 +143,14 @@ Verify:
 5. All bundled apps launch and function
 6. Settings changes (grid size, dark theme) apply immediately
 
-### Emulator Testing Note
+### Emulator Testing Limitation
 
-The Android 14 (API 34) emulator was set up with Google APIs x86_64 system image. In this containerized environment, the emulator QEMU process starts but the Android guest OS does not complete boot (heartbeat remains at 0, adb stays offline). This is a resource limitation of the container environment, not an issue with the APK itself. The APK is valid and buildable — install on a physical device or a properly resourced emulator to test.
+**Important:** The Android 14 emulator could not be fully booted in this containerized environment. QEMU starts but the Android guest OS does not complete the boot process (heartbeat stays at 0, adb remains offline). This is a resource limitation of the container environment (no GPU passthrough, limited KVM acceleration), not an issue with the APK itself.
+
+**To test the APK:**
+1. Install on a physical Android 10–16 device: `adb install app/build/outputs/apk/debug/app-debug.apk`
+2. Or use a properly resourced emulator with GPU acceleration
+3. Set as default launcher: Settings → Apps → Default apps → Home app → ICS Home Launcher
 
 ## Project Status
 
