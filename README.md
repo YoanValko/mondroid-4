@@ -39,6 +39,9 @@
 | Messaging | Compose → `smsto:` intent chooser |
 | Notes | Local SQLite database |
 | File Manager | External storage browser |
+| Settings | System settings shortcuts |
+| App Info | App details and storage info |
+| Frequent Apps | Launch frequency-based app list |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
@@ -63,7 +66,8 @@ com.example.icslauncher/
 ├── easteregg/         EasterEggActivity, EasterEggView (self-contained ICS egg)
 ├── settings/          SettingsActivity, ICSPreferenceFragment, AboutActivity,
 │                      QuickSettingsActivity, WelcomeActivity
-└── apps/              12 Nexus-era app reimplementations
+├── apps/              14 Nexus-era app reimplementations (incl. Settings, App Info, Frequent Apps)
+└── launcher/          ... AppFrequencyTracker (launch frequency tracking)
 ```
 
 ## Build Requirements
@@ -141,8 +145,8 @@ Verify:
 ## Project Status
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
-✅ APK generated (~9.5 MB)
-✅ All 19 activities + 1 wallpaper service registered
+✅ APK generated (~9.6 MB)
+✅ 24 activities + 1 wallpaper service + 2 receivers registered
 ✅ GitHub repository: https://github.com/YoanValko/mondroid-4
 
 ---
