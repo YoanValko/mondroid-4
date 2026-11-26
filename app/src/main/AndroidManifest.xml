@@ -326,6 +326,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Age Calculator activity. -->
+        <activity
+            android:name=".apps.ICSVAGECalculatorActivity"
+            android:label="@string/app_age_calculator"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- BMI Calculator activity. -->
         <activity
             android:name=".apps.ICSBMICalculatorActivity"

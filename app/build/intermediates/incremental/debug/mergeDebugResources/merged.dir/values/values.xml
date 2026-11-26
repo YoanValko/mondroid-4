@@ -751,6 +751,7 @@
     <string name="add_widget">Add Widget</string>
     <string name="all_apps">All Apps</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
+    <string name="app_age_calculator">Age Calculator</string>
     <string name="app_bmi_calculator">BMI Calculator</string>
     <string name="app_browser">Browser</string>
     <string name="app_calculator">Calculator</string>

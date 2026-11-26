@@ -139,6 +139,7 @@ string add_app_shortcut
 string add_to_home
 string add_widget
 string all_apps
+string app_age_calculator
 string app_bmi_calculator
 string app_browser
 string app_calculator
