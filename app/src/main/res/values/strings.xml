@@ -46,6 +46,7 @@
     <string name="app_fortune">Fortune</string>
     <string name="app_tip_calculator">Tip Calculator</string>
     <string name="app_unit_converter">Unit Converter</string>
+    <string name="app_currency_converter">Currency Converter</string>
     <string name="app_bmi_calculator">BMI Calculator</string>
     <string name="app_timer">Timer</string>
 

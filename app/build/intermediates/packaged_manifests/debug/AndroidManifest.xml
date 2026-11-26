@@ -345,6 +345,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Currency Converter activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSCurrencyConverterActivity"
+            android:exported="true"
+            android:label="@string/app_currency_converter"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- BMI Calculator activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSBMICalculatorActivity"

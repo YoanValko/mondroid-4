@@ -318,6 +318,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Currency Converter activity. -->
+        <activity
+            android:name=".apps.ICSCurrencyConverterActivity"
+            android:label="@string/app_currency_converter"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- BMI Calculator activity. -->
         <activity
             android:name=".apps.ICSBMICalculatorActivity"
