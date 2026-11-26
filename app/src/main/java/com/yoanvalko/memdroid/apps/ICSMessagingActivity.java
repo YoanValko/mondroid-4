@@ -14,11 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.yoanvalko.memdroid.R;
 
-/**
- * Reimplementation of the ICS Messaging entry point. Sending an SMS hands the message to the
- * user's default SMS app via an smsto: intent. Note: becoming the default SMS app requires the
- * user to select this package in system settings; this app does not silently intercept SMS.
- */
 public class ICSMessagingActivity extends AppCompatActivity {
 
     @Override
@@ -52,7 +47,7 @@ public class ICSMessagingActivity extends AppCompatActivity {
                 return;
             }
             Intent sms = new Intent(Intent.ACTION_SENDTO);
-            sms.setData(Uri.parse("smsto:" + addr));
+            sms.setData(android.net.Uri.parse("smsto:" + addr));
             sms.putExtra("sms_body", body.getText().toString());
             if (sms.resolveActivity(getPackageManager()) != null) {
                 startActivity(Intent.createChooser(sms, "Send via"));

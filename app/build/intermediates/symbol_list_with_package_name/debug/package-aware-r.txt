@@ -743,8 +743,12 @@ color ics_android_green_dark
 color ics_blue
 color ics_blue_dark
 color ics_blue_light
-color ics_bread
-color ics_cream
+color ics_divider
+color ics_panel_background
+color ics_text_primary
+color ics_text_secondary
+color ics_widget_background
+color ics_window_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1020,6 +1024,12 @@ drawable ic_action_camera
 drawable ic_action_quick_settings
 drawable ic_action_settings
 drawable ic_action_wallpaper
+drawable ic_app_browser
+drawable ic_app_calculator
+drawable ic_app_clock
+drawable ic_app_contacts
+drawable ic_app_email
+drawable ic_app_music
 drawable ic_arrow_down_24dp
 drawable ic_call_answer
 drawable ic_call_answer_low

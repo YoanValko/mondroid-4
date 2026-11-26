@@ -13,21 +13,25 @@
         <item>5</item>
     </string-array>
     <attr format="reference|color" name="dividerColor"/>
-    <color name="colorAccent">#33B5E5</color>
-    <color name="colorBackground">#F9F9F9</color>
-    <color name="colorDivider">#BDBDBD</color>
-    <color name="colorOnSurface">#1A1A1A</color>
-    <color name="colorOnSurfaceVariant">#737373</color>
+    <color name="colorAccent">#0099CC</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorDivider">#333333</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorOnSurfaceVariant">#FFFFFF</color>
     <color name="colorPrimary">#0099CC</color>
     <color name="colorPrimaryDark">#0077AA</color>
-    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurface">#000000</color>
     <color name="ics_android_green">#A4C639</color>
     <color name="ics_android_green_dark">#7E942E</color>
     <color name="ics_blue">#0099CC</color>
     <color name="ics_blue_dark">#0077AA</color>
     <color name="ics_blue_light">#33B5E5</color>
-    <color name="ics_bread">#F5DEB3</color>
-    <color name="ics_cream">#FFF8DC</color>
+    <color name="ics_divider">#333333</color>
+    <color name="ics_panel_background">#333333</color>
+    <color name="ics_text_primary">#FFFFFF</color>
+    <color name="ics_text_secondary">#AAAAAA</color>
+    <color name="ics_widget_background">#444444</color>
+    <color name="ics_window_background">#000000</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="app_icon_size">48dp</dimen>

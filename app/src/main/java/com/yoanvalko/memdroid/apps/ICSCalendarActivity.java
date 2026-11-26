@@ -1,31 +1,18 @@
 package com.yoanvalko.memdroid.apps;
 
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yoanvalko.memdroid.R;
 
-/**
- * Reimplementation of a Nexus-era Notes app. Stores notes in a local SQLite database
- * (no network, no proprietary code).
- */
 public class ICSCalendarActivity extends AppCompatActivity {
 
-    // Placeholder: the real calendar integration requires system permissions.
-    // This opens the app drawer so the user can launch the system Calendar app.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +22,7 @@ public class ICSCalendarActivity extends AppCompatActivity {
         root.setGravity(android.view.Gravity.CENTER);
         root.setPadding(24, 24, 24, 24);
 
-        android.widget.TextView hint = new android.widget.TextView(this);
+        TextView hint = new TextView(this);
         hint.setText("Calendar is handled by the system Calendar app.");
         hint.setTextSize(14);
         hint.setPadding(0, 0, 0, 16);

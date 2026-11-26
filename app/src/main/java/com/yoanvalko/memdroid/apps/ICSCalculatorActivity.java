@@ -16,8 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Reimplementation of the Ice Cream Sandwich Calculator. Basic arithmetic (+ - * /) with a
- * simple expression evaluator, memory functions (M+, M-, MR, MC), and no network.
+ * Reimplementation of the Ice Cream Sandwich Calculator.
  */
 public class ICSCalculatorActivity extends AppCompatActivity {
 
@@ -35,7 +34,6 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         root.setOrientation(LinearLayout.VERTICAL);
         root.setPadding(16, 16, 16, 16);
 
-        // Memory indicator
         memIndicator = new TextView(this);
         memIndicator.setText("M: 0");
         memIndicator.setTextSize(12);
@@ -54,7 +52,6 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         exprView.setText("0");
         root.addView(exprView);
 
-        // Memory row
         LinearLayout memRow = new LinearLayout(this);
         memRow.setOrientation(LinearLayout.HORIZONTAL);
         String[] memKeys = {"MC", "MR", "M-", "M+"};
@@ -69,7 +66,6 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         }
         root.addView(memRow);
 
-        // Numeric keypad
         String[][] rows = {
                 {"7", "8", "9", "/"},
                 {"4", "5", "6", "*"},
@@ -140,7 +136,6 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         display.setText(cur + cap);
     }
 
-    /** Tiny expression evaluator supporting + - * / and decimals. */
     private String evaluate(String expr) {
         expr = expr.replaceAll(" ", "");
         if (expr.isEmpty()) return "0";
@@ -159,7 +154,6 @@ public class ICSCalculatorActivity extends AppCompatActivity {
         }
         if (num.length() > 0) tokens.add(num.toString());
         try {
-            // Pass 1: * and /
             for (int i = 1; i < tokens.size(); i += 2) {
                 String op = tokens.get(i);
                 if (op.equals("*") || op.equals("/")) {
@@ -172,7 +166,6 @@ public class ICSCalculatorActivity extends AppCompatActivity {
                     i -= 2;
                 }
             }
-            // Pass 2: + and -
             double result = Double.parseDouble(tokens.get(0));
             for (int i = 1; i < tokens.size(); i += 2) {
                 double b = Double.parseDouble(tokens.get(i + 1));

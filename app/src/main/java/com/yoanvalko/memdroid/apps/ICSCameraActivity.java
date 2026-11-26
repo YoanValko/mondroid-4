@@ -3,11 +3,11 @@ package com.yoanvalko.memdroid.apps;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -21,11 +21,6 @@ import androidx.core.content.ContextCompat;
 
 import com.yoanvalko.memdroid.R;
 
-/**
- * Reimplementation of the ICS Camera. Delegates image capture to the system camera app via
- * {@link MediaStore#ACTION_IMAGE_CAPTURE} and displays the result. Requires the CAMERA
- * permission, requested at runtime. Photos are written to MediaStore under scoped storage.
- */
 public class ICSCameraActivity extends AppCompatActivity {
 
     private static final int REQ_CAMERA_PERMISSION = 1003;
@@ -60,16 +55,12 @@ public class ICSCameraActivity extends AppCompatActivity {
         Button capture = new Button(this);
         capture.setText("Capture");
         capture.setOnClickListener(v -> {
-            if (ContextCompat.checkSelfPermission(this,
-                    android.Manifest.permission.CAMERA)
-                    != PackageManager.PERMISSION_GRANTED) {
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-                    ActivityCompat.requestPermissions(this,
-                            new String[]{android.Manifest.permission.CAMERA},
-                            REQ_CAMERA_PERMISSION);
-                } else {
-                    openCamera();
-                }
+            if (android.content.pm.PackageManager.PERMISSION_GRANTED !=
+                    ContextCompat.checkSelfPermission(this,
+                            android.Manifest.permission.CAMERA)) {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{android.Manifest.permission.CAMERA},
+                        REQ_CAMERA_PERMISSION);
             } else {
                 openCamera();
             }
@@ -86,24 +77,23 @@ public class ICSCameraActivity extends AppCompatActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 openCamera();
             } else {
-                Toast.makeText(this, R.string.perm_denied, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Camera permission denied", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQ_CAPTURE_IMAGE) {
             if (resultCode == RESULT_OK) {
                 if (data != null && data.getExtras() != null) {
-                    Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
+                    android.graphics.Bitmap thumbnail = (android.graphics.Bitmap) data.getExtras().get("data");
                     if (thumbnail != null) photoView.setImageBitmap(thumbnail);
                 }
                 if (capturedPhotoUri != null) {
                     photoView.setImageURI(capturedPhotoUri);
                 }
-                Toast.makeText(this, "Photo captured", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Capture cancelled", Toast.LENGTH_SHORT).show();
             }
@@ -112,14 +102,14 @@ public class ICSCameraActivity extends AppCompatActivity {
 
     private void openCamera() {
         ContentValues values = new ContentValues();
-        values.put(MediaStore.Images.Media.DISPLAY_NAME,
+        values.put(android.provider.MediaStore.Images.Media.DISPLAY_NAME,
                 "ICS_" + System.currentTimeMillis() + ".jpg");
-        values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
-        values.put(MediaStore.Images.Media.RELATIVE_PATH,
+        values.put(android.provider.MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+        values.put(android.provider.MediaStore.Images.Media.RELATIVE_PATH,
                 Environment.DIRECTORY_PICTURES + "/ICS Camera");
 
         capturedPhotoUri = getContentResolver().insert(
-                MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
 
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         intent.putExtra(MediaStore.EXTRA_OUTPUT, capturedPhotoUri);

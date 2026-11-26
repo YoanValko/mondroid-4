@@ -5,7 +5,6 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -24,11 +23,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 4.0.4-style wallpaper picker: static bundled wallpapers, the ICS live wallpaper, and an option
- * to choose a photo from the user's media (scoped-storage friendly: we only read a URI the user
- * explicitly picked).
- */
 public class WallpaperPickerActivity extends AppCompatActivity
         implements WallpaperAdapter.OnItemSelected {
 
@@ -62,10 +56,8 @@ public class WallpaperPickerActivity extends AppCompatActivity
         adapter = new WallpaperAdapter(this, items, this);
         grid.setAdapter(adapter);
 
-        // Default preview.
         preview.setImageResource(R.drawable.ic_cream_sandwich);
         selectedDrawableRes = R.drawable.ic_cream_sandwich;
-        selectedPhotoUri = null;
         btnSet.setEnabled(true);
 
         Button btnLive = findViewById(R.id.btn_live_wallpaper);
@@ -87,7 +79,6 @@ public class WallpaperPickerActivity extends AppCompatActivity
             Uri uri = data.getData();
             selectedPhotoUri = uri;
             selectedDrawableRes = -1;
-            // Show the picked photo in the preview (downsampled for safety).
             preview.setImageURI(uri);
             btnSet.setEnabled(true);
             btnSet.setText(R.string.wallpaper_set_done);
@@ -127,7 +118,7 @@ public class WallpaperPickerActivity extends AppCompatActivity
             Intent intent = new Intent(WallpaperManager.ACTION_CHANGE_LIVE_WALLPAPER);
             intent.putExtra(WallpaperManager.EXTRA_LIVE_WALLPAPER_COMPONENT, cn);
             startActivity(intent);
-            Toast.makeText(this, "Opening live wallpaper picker…", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Opening live wallpaper picker\u2026", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             Toast.makeText(this, R.string.wallpaper_error, Toast.LENGTH_SHORT).show();
         }

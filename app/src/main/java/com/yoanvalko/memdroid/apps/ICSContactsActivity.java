@@ -1,7 +1,6 @@
 package com.yoanvalko.memdroid.apps;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,15 +12,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import com.yoanvalko.memdroid.R;
 
-/**
- * Reimplementation of the ICS Contacts entry point. Reads contacts only through the system picker
- * (which grants a temporary URI permission), so no READ_CONTACTS permission is required.
- */
 public class ICSContactsActivity extends AppCompatActivity {
 
     private static final int REQ_PICK_CONTACT = 1004;

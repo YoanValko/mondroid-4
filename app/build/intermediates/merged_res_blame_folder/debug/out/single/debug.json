@@ -1,222 +1,262 @@
 [
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_widget_clock.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/widget_clock.xml"
+        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_contacts.xml.flat",
+        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_contacts.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_page_workspace.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/page_workspace.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_sound.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_sound.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_bg_dock.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/bg_dock.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_quick_settings.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_quick_settings.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_sound.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_sound.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_battery.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_battery.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_widget_bg.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/widget_bg.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_music.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_music.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_accounts.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_accounts.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_easter_egg.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_easter_egg.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_music.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_music.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_browser.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_browser.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/xml_widget_clock_info.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/xml/widget_clock_info.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_camera_placeholder.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_camera_placeholder.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_settings.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_settings.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_email.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_email.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_settings.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_settings.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_wallpaper_picker.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_wallpaper_picker.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_gallery.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_gallery.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_apps.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_apps.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_clock.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_clock.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_file.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_file.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_widget_bg.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/widget_bg.xml"
     },
     {
         "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_browser.xml.flat",
         "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_browser.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_browser.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_browser.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_contacts.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_contacts.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_camera.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_camera.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_page_workspace.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/page_workspace.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_cream_sandwich.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_cream_sandwich.xml"
+        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_clock.xml.flat",
+        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_clock.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_apps.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_apps.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_page_indicator_dot_inactive.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/page_indicator_dot_inactive.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_security.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_security.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/xml_widget_clock_info.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/xml/widget_clock_info.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_wallpaper.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_wallpaper.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_ics_android.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_ics_android.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_search_bar.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/search_bar.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_quick_settings.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_quick_settings.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_page_indicator_dot_inactive.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/page_indicator_dot_inactive.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_popup_add_shortcut.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/popup_add_shortcut.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_photo_view.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_photo_view.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_data.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_data.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_easter_egg.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_easter_egg.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_email.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_email.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_app_drawer.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_app_drawer.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_launcher.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_launcher.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_camera.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_camera.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_launcher.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_launcher.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_quick_settings.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_quick_settings.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_settings.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_launcher.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_launcher.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_cream_sandwich.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_cream_sandwich.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_wifi.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_wifi.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_photo_view.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_photo_view.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_display.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_display.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_launcher_round.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_launcher_round.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_popup_add_shortcut.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/popup_add_shortcut.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_browser.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_browser.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_back.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_back.xml"
+        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_browser.xml.flat",
+        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_browser.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_camera.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_camera.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_app_drawer.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_app_drawer.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/menu_menu_launcher.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/menu/menu_launcher.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_back.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_back.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_file.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_file.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_welcome.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_welcome.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_phone.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_phone.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_camera.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_camera.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_wallpaper_thumb.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_wallpaper_thumb.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_folder.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_folder.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_folder.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_folder.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_bluetooth.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_bluetooth.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_settings.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_settings.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_browser.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_browser.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_launcher.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_launcher.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_music.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_music.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_ics_android.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_ics_android.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/menu_menu_launcher.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/menu/menu_launcher.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_bluetooth.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_bluetooth.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_wallpaper.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_wallpaper.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_about.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_about.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_page_indicator_dot_active.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/page_indicator_dot_active.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_launcher_round.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_launcher_round.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_wallpaper_thumb.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_wallpaper_thumb.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/xml_wallpaper.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/xml/wallpaper.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_widget_clock.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/widget_clock.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_item_app.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/item_app.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_security.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_security.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_page_indicator_dot_active.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/page_indicator_dot_active.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_bg_dock.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/bg_dock.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_battery.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_battery.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_accounts.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_accounts.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_item_wallpaper.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/item_wallpaper.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_camera.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_camera.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/xml_preferences.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/xml/preferences.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_item_wallpaper.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/item_wallpaper.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_gallery.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_gallery.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_display.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_display.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_email.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_email.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_phone.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_phone.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_wallpaper_picker.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_wallpaper_picker.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_about.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_about.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_action_quick_settings.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_action_quick_settings.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_wifi.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_wifi.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_welcome.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/layout/activity_welcome.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/xml_wallpaper.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/xml/wallpaper.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_location.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_location.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_activity_camera.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/activity_camera.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_recent.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_recent.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/layout_item_app.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/layout/item_app.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_camera_placeholder.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_camera_placeholder.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_location.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_location.xml"
     },
     {
-        "merged": "com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_qs_data.xml.flat",
-        "source": "com.yoanvalko.memdroid.app-main-38:/drawable/ic_qs_data.xml"
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/xml_preferences.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_search_bar.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/search_bar.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_dock_recent.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_dock_recent.xml"
+    },
+    {
+        "merged": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-merged_res-36:/drawable_ic_app_calculator.xml.flat",
+        "source": "/home/yoan_valko/.gradle/daemon/8.10.2/com.yoanvalko.memdroid.app-main-38:/drawable/ic_app_calculator.xml"
     }
 ]

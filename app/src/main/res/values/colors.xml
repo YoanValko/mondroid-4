@@ -1,21 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Ice Cream Sandwich "holo" accent palette (design reference, reimplemented). -->
+    <!-- Ice Cream Sandwich "holo" accent palette -->
     <color name="ics_blue">#0099CC</color>
     <color name="ics_blue_dark">#0077AA</color>
     <color name="ics_blue_light">#33B5E5</color>
     <color name="ics_android_green">#A4C639</color>
     <color name="ics_android_green_dark">#7E942E</color>
-    <color name="ics_bread">#F5DEB3</color>
-    <color name="ics_cream">#FFF8DC</color>
-
-    <!-- Theme colors (light theme). colorSurface / colorBackground are mirrored in
-         values-night/colors.xml for the dark theme. -->
+    
+    <!-- ICS Dark theme colors (default ICS look) -->
     <color name="colorPrimary">#0099CC</color>
     <color name="colorPrimaryDark">#0077AA</color>
-    <color name="colorAccent">#33B5E5</color>
-    <color name="colorSurface">#FFFFFF</color>
-    <color name="colorBackground">#F9F9F9</color>
-    <color name="colorOnSurface">#1A1A1A</color>
-    <color name="colorOnSurfaceVariant">#737373</color>
-    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorAccent">#0099CC</color>
+    <color name="colorSurface">#000000</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorOnSurfaceVariant">#FFFFFF</color>
+    <color name="colorDivider">#333333</color>
+    
+    <!-- ICS specific colors -->
+    <color name="ics_window_background">#000000</color>
+    <color name="ics_panel_background">#333333</color>
+    <color name="ics_widget_background">#444444</color>
+    <color name="ics_text_primary">#FFFFFF</color>
+    <color name="ics_text_secondary">#AAAAAA</color>
+    <color name="ics_divider">#333333</color>
 </resources>

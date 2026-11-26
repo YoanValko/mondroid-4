@@ -9,6 +9,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,10 +23,6 @@ import com.yoanvalko.memdroid.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Reimplementation of the ICS Music player. Lists audio from MediaStore and plays a selection
- * with MediaPlayer. Requires READ_MEDIA_AUDIO (API 33+) / READ_EXTERNAL_STORAGE (API <= 32).
- */
 public class ICSMusicActivity extends AppCompatActivity {
 
     private static final int REQ_AUDIO = 1001;
@@ -39,36 +36,27 @@ public class ICSMusicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_music);
 
-        listView = findViewById(R.id.music_list);
-        emptyView = findViewById(R.id.music_empty);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new java.util.ArrayList<>());
+        LinearLayout root = new LinearLayout(this);
+        root.setOrientation(LinearLayout.VERTICAL);
+        root.setPadding(16, 16, 16, 16);
+
+        TextView hint = new TextView(this);
+        hint.setText("Select a song to play:");
+        hint.setTextSize(14);
+        hint.setPadding(0, 0, 0, 8);
+        root.addView(hint);
+
+        listView = new ListView(this);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new ArrayList<>());
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> playSong(position));
+        root.addView(listView, new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT, 1f));
+
+        setContentView(root);
 
         ensureAudioPermission();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (mediaPlayer != null) {
-            mediaPlayer.release();
-            mediaPlayer = null;
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == REQ_AUDIO) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                loadSongs();
-            } else {
-                emptyView.setText(R.string.perm_denied);
-            }
-        }
     }
 
     private void ensureAudioPermission() {
@@ -76,14 +64,7 @@ public class ICSMusicActivity extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, perm) == PackageManager.PERMISSION_GRANTED) {
             loadSongs();
         } else {
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-                if (shouldShowRequestPermissionRationale(perm)) {
-                    Toast.makeText(this, R.string.perm_storage_rationale, Toast.LENGTH_LONG).show();
-                }
-                ActivityCompat.requestPermissions(this, new String[]{perm}, REQ_AUDIO);
-            } else {
-                loadSongs();
-            }
+            ActivityCompat.requestPermissions(this, new String[]{perm}, REQ_AUDIO);
         }
     }
 
@@ -127,11 +108,11 @@ public class ICSMusicActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         if (songs.isEmpty()) {
-            emptyView.setVisibility(View.VISIBLE);
-            listView.setVisibility(View.GONE);
-        } else {
-            emptyView.setVisibility(View.GONE);
-            listView.setVisibility(View.VISIBLE);
+            TextView empty = new TextView(this);
+            empty.setText("No music found");
+            empty.setTextSize(16);
+            empty.setPadding(0, 24, 0, 0);
+            ((LinearLayout) findViewById(android.R.id.content)).addView(empty);
         }
     }
 
@@ -152,6 +133,15 @@ public class ICSMusicActivity extends AppCompatActivity {
             }
         } catch (Exception e) {
             Toast.makeText(this, "Cannot play " + s.title, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mediaPlayer != null) {
+            mediaPlayer.release();
+            mediaPlayer = null;
         }
     }
 
