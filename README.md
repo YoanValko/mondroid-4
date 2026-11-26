@@ -60,8 +60,6 @@
 | Stopwatch | Measure elapsed time with laps |
 | Pomodoro | 25-minute work timer |
 | Todo List | Simple task manager |
-| Todo List | Simple task manager |
-| Todo List | Simple task manager |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
