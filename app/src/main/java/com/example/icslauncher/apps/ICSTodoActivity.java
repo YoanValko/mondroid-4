@@ -1,8 +1,10 @@
 package com.example.icslauncher.apps;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -10,17 +12,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.icslauncher.R;
 
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Simple todo list with add and clear functionality.
+ * Simple todo list with add, delete, and clear functionality.
  */
 public class ICSTodoActivity extends AppCompatActivity {
 
     private LinearLayout root;
+    private LinearLayout tasksContainer;
     private Button addButton;
     private Button clearButton;
-    private int taskCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,10 +70,13 @@ public class ICSTodoActivity extends AppCompatActivity {
         clearBtn.setText("Clear All");
         clearBtn.setTextSize(16);
         clearBtn.setOnClickListener(v -> {
-            taskCount = 0;
-            root.removeViews(1, root.getChildCount() - 1);
+            tasksContainer.removeAllViews();
         });
         root.addView(clearBtn);
+
+        tasksContainer = new LinearLayout(this);
+        tasksContainer.setOrientation(LinearLayout.VERTICAL);
+        root.addView(tasksContainer);
 
         setContentView(root);
     }
@@ -91,9 +97,9 @@ public class ICSTodoActivity extends AppCompatActivity {
         Button deleteBtn = new Button(this);
         deleteBtn.setText("Delete");
         deleteBtn.setTextSize(12);
-        deleteBtn.setOnClickListener(v -> root.removeView(taskRow));
+        deleteBtn.setOnClickListener(v -> tasksContainer.removeView(taskRow));
         taskRow.addView(deleteBtn);
 
-        root.addView(taskRow, root.getChildCount() - 1);
+        tasksContainer.addView(taskRow);
     }
 }
