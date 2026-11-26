@@ -776,6 +776,7 @@
     <string name="app_settings">Settings</string>
     <string name="app_sound_recorder">Sound Recorder</string>
     <string name="app_timer">Timer</string>
+    <string name="app_tip_calculator">Tip Calculator</string>
     <string name="app_weather">Weather</string>
     <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_video_action">Video</string>

@@ -1611,6 +1611,7 @@ string app_search
 string app_settings
 string app_sound_recorder
 string app_timer
+string app_tip_calculator
 string app_weather
 string call_notification_answer_action
 string call_notification_answer_video_action

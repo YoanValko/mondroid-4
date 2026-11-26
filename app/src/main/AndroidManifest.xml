@@ -302,6 +302,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Tip Calculator activity. -->
+        <activity
+            android:name=".apps.ICTipCalculatorActivity"
+            android:label="@string/app_tip_calculator"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Device Info activity. -->
         <activity
             android:name=".apps.ICSDeviceInfoActivity"
