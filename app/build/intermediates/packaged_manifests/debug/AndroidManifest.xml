@@ -329,6 +329,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Todo activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+            android:exported="true"
+            android:label="@string/app_todo"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Weather activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSWeatherActivity"

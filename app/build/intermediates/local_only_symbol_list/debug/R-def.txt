@@ -171,6 +171,7 @@ string app_sound_recorder
 string app_stopwatch
 string app_timer
 string app_tip_calculator
+string app_todo
 string app_unit_converter
 string app_weather
 string cancel

@@ -53,6 +53,7 @@
     <string name="app_timer">Timer</string>
     <string name="app_stopwatch">Stopwatch</string>
     <string name="app_pomodoro">Pomodoro</string>
+    <string name="app_todo">Todo List</string>
 
     <!-- Wallpaper -->
     <string name="wallpaper_ics_default">Ice Cream Sandwich (default)</string>
