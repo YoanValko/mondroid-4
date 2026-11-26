@@ -321,6 +321,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Pomodoro activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSPomodoroActivity"
+            android:exported="true"
+            android:label="@string/app_pomodoro"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Weather activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSWeatherActivity"
