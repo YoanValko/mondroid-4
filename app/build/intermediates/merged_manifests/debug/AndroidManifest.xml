@@ -401,6 +401,46 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Unit Converter activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+            android:exported="true"
+            android:label="@string/app_unit_converter"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
+        <!-- Flashlight activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSCameraFlashActivity"
+            android:exported="true"
+            android:label="@string/app_flashlight"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
+        <!-- Stopwatch activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSSwimStopwatchActivity"
+            android:exported="true"
+            android:label="@string/app_stopwatch"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
+        <!-- Weather activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSWeatherActivity"
+            android:exported="true"
+            android:label="@string/app_weather"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
+        <!-- Todo activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+            android:exported="true"
+            android:label="@string/app_todo"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"

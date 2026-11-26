@@ -1,8 +1,6 @@
 package com.example.icslauncher.apps;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -13,19 +11,20 @@ import com.example.icslauncher.R;
 import java.util.Random;
 
 /**
- * Mock weather app showing current weather conditions.
+ * Weather app showing current weather conditions.
  */
 public class ICSWeatherActivity extends AppCompatActivity {
 
     private TextView locationView;
-    private TextView tempView;
+    private TextView temperatureView;
     private TextView conditionView;
     private TextView humidityView;
     private TextView windView;
-    private Button refreshButton;
 
-    private final String[] conditions = {"Sunny", "Partly Cloudy", "Cloudy", "Overcast", "Light Rain", "Rain", "Thunderstorms", "Snow"};
-    private final String[] cities = {"New York", "London", "Tokyo", "Paris", "Berlin", "Sydney", "Moscow", "Cairo"};
+    private final String[] conditions = {"Sunny", "Partly Cloudy", "Cloudy", "Overcast",
+            "Light Rain", "Rain", "Thunderstorms", "Snow"};
+    private final String[] cities = {"New York", "London", "Tokyo", "Paris", "Berlin",
+            "Sydney", "Moscow", "Cairo", "Sydney", "Dubai"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,35 +42,29 @@ public class ICSWeatherActivity extends AppCompatActivity {
         root.addView(title);
 
         locationView = new TextView(this);
-        locationView.setTextSize(18);
+        locationView.setTextSize(24);
         locationView.setPadding(0, 0, 0, 8);
         root.addView(locationView);
 
-        tempView = new TextView(this);
-        tempView.setTextSize(48);
-        tempView.setPadding(0, 10, 0, 10);
-        root.addView(tempView);
+        temperatureView = new TextView(this);
+        temperatureView.setTextSize(48);
+        temperatureView.setPadding(0, 10, 0, 10);
+        root.addView(temperatureView);
 
         conditionView = new TextView(this);
-        conditionView.setTextSize(16);
+        conditionView.setTextSize(18);
         conditionView.setPadding(0, 0, 0, 16);
         root.addView(conditionView);
 
         humidityView = new TextView(this);
-        humidityView.setTextSize(14);
+        humidityView.setTextSize(16);
         humidityView.setPadding(0, 0, 0, 4);
         root.addView(humidityView);
 
         windView = new TextView(this);
-        windView.setTextSize(14);
+        windView.setTextSize(16);
         windView.setPadding(0, 0, 0, 20);
         root.addView(windView);
-
-        refreshButton = new Button(this);
-        refreshButton.setText("Refresh");
-        refreshButton.setTextSize(16);
-        refreshButton.setOnClickListener(v -> updateWeather());
-        root.addView(refreshButton);
 
         setContentView(root);
 
@@ -87,7 +80,7 @@ public class ICSWeatherActivity extends AppCompatActivity {
         int windSpeed = random.nextInt(30); // 0 to 30 km/h
 
         locationView.setText(city);
-        tempView.setText(String.format("%d°C", temp));
+        temperatureView.setText(String.format("%d°C", temp));
         conditionView.setText(condition);
         humidityView.setText("Humidity: " + humidity + "%");
         windView.setText("Wind: " + windSpeed + " km/h");

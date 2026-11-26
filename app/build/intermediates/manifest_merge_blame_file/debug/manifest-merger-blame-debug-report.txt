@@ -98,7 +98,7 @@
 59-->[androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 60
 61    <application
-61-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-411:19
+61-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-451:19
 62        android:name="com.example.icslauncher.ICSApplication"
 62-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:42:9-39
 63        android:allowBackup="true"
@@ -711,148 +711,218 @@
 402            android:theme="@style/Theme.ICSLauncher" />
 402-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:373:13-53
 403
-404        <!-- Device Info activity. -->
+404        <!-- Unit Converter activity. -->
 405        <activity
-405-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:378:9-383:38
-406            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
-406-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:379:13-55
+405-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:338:9-343:38
+406            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+406-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-58
 407            android:exported="true"
-407-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:383:13-36
-408            android:label="@string/app_device_info"
-408-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:380:13-52
+407-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:343:13-36
+408            android:label="@string/app_unit_converter"
+408-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:340:13-55
 409            android:screenOrientation="unspecified"
-409-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:382:13-52
+409-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:342:13-52
 410            android:theme="@style/Theme.ICSLauncher" />
-410-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:381:13-53
+410-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:341:13-53
 411
-412        <!-- Clock widget provider. -->
-413        <receiver
-413-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:386:9-395:20
-414            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
+412        <!-- Flashlight activity. -->
+413        <activity
+413-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:386:9-391:38
+414            android:name="com.example.icslauncher.apps.ICSCameraFlashActivity"
 414-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:387:13-56
-415            android:exported="true" >
-415-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:388:13-36
-416            <intent-filter>
-416-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:389:13-391:29
-417                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-417-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:390:17-83
-417-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:390:25-81
-418            </intent-filter>
+415            android:exported="true"
+415-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:391:13-36
+416            android:label="@string/app_flashlight"
+416-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:388:13-51
+417            android:screenOrientation="unspecified"
+417-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:390:13-52
+418            android:theme="@style/Theme.ICSLauncher" />
+418-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:389:13-53
 419
-420            <meta-data
-420-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:392:13-394:60
-421                android:name="android.appwidget.provider"
-421-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:393:17-58
-422                android:resource="@xml/widget_clock_info" />
-422-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:394:17-58
-423        </receiver>
-424
-425        <!--
-426             =====================================================================
-427             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
-428             =====================================================================
-429        -->
-430        <service
-430-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:400:9-410:19
-431            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
-431-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:401:13-58
-432            android:exported="true"
-432-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:403:13-36
-433            android:permission="android.permission.BIND_WALLPAPER" >
-433-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:402:13-67
-434            <intent-filter>
-434-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:404:13-406:29
-435                <action android:name="android.service.wallpaper.WallpaperService" />
-435-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:405:17-84
-435-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:405:25-82
-436            </intent-filter>
-437
-438            <meta-data
-438-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:407:13-409:52
-439                android:name="android.service.wallpaper"
-439-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:408:17-57
-440                android:resource="@xml/wallpaper" />
-440-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:409:17-50
-441        </service>
-442
-443        <provider
-443-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-444            android:name="androidx.startup.InitializationProvider"
-444-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
-445            android:authorities="com.example.icslauncher.androidx-startup"
-445-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
-446            android:exported="false" >
-446-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
-447            <meta-data
-447-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-448                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-448-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
-449                android:value="androidx.startup" />
-449-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
-450            <meta-data
-450-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/yoan_valko/.gradle/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-451                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-451-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/yoan_valko/.gradle/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-452                android:value="androidx.startup" />
-452-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/yoan_valko/.gradle/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-453            <meta-data
-453-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-454                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-454-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-455                android:value="androidx.startup" />
-455-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-456        </provider>
-457
-458        <uses-library
-458-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
-459            android:name="androidx.window.extensions"
-459-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
-460            android:required="false" />
-460-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
-461        <uses-library
-461-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
-462            android:name="androidx.window.sidecar"
-462-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
-463            android:required="false" />
-463-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+420        <!-- Stopwatch activity. -->
+421        <activity
+421-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:394:9-399:38
+422            android:name="com.example.icslauncher.apps.ICSSwimStopwatchActivity"
+422-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:395:13-58
+423            android:exported="true"
+423-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:399:13-36
+424            android:label="@string/app_stopwatch"
+424-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:396:13-50
+425            android:screenOrientation="unspecified"
+425-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:398:13-52
+426            android:theme="@style/Theme.ICSLauncher" />
+426-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:397:13-53
+427
+428        <!-- Weather activity. -->
+429        <activity
+429-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:314:9-319:38
+430            android:name="com.example.icslauncher.apps.ICSWeatherActivity"
+430-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:315:13-52
+431            android:exported="true"
+431-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:319:13-36
+432            android:label="@string/app_weather"
+432-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:316:13-48
+433            android:screenOrientation="unspecified"
+433-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:318:13-52
+434            android:theme="@style/Theme.ICSLauncher" />
+434-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:317:13-53
+435
+436        <!-- Todo activity. -->
+437        <activity
+437-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:306:9-311:38
+438            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+438-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:307:13-49
+439            android:exported="true"
+439-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:311:13-36
+440            android:label="@string/app_todo"
+440-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:308:13-45
+441            android:screenOrientation="unspecified"
+441-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:310:13-52
+442            android:theme="@style/Theme.ICSLauncher" />
+442-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:309:13-53
+443
+444        <!-- Device Info activity. -->
+445        <activity
+445-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:418:9-423:38
+446            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
+446-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:419:13-55
+447            android:exported="true"
+447-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:423:13-36
+448            android:label="@string/app_device_info"
+448-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:420:13-52
+449            android:screenOrientation="unspecified"
+449-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:422:13-52
+450            android:theme="@style/Theme.ICSLauncher" />
+450-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:421:13-53
+451
+452        <!-- Clock widget provider. -->
+453        <receiver
+453-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:426:9-435:20
+454            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
+454-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:427:13-56
+455            android:exported="true" >
+455-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:428:13-36
+456            <intent-filter>
+456-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:429:13-431:29
+457                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+457-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:430:17-83
+457-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:430:25-81
+458            </intent-filter>
+459
+460            <meta-data
+460-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:432:13-434:60
+461                android:name="android.appwidget.provider"
+461-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:433:17-58
+462                android:resource="@xml/widget_clock_info" />
+462-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:434:17-58
+463        </receiver>
 464
-465        <receiver
-465-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-466            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-466-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-467            android:directBootAware="false"
-467-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-468            android:enabled="true"
-468-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-469            android:exported="true"
-469-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-470            android:permission="android.permission.DUMP" >
-470-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-471            <intent-filter>
-471-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-472                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-472-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-472-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-473            </intent-filter>
+465        <!--
+466             =====================================================================
+467             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
+468             =====================================================================
+469        -->
+470        <service
+470-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:440:9-450:19
+471            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
+471-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:441:13-58
+472            android:exported="true"
+472-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:443:13-36
+473            android:permission="android.permission.BIND_WALLPAPER" >
+473-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:442:13-67
 474            <intent-filter>
-474-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-475                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-475-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-475-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+474-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:444:13-446:29
+475                <action android:name="android.service.wallpaper.WallpaperService" />
+475-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:445:17-84
+475-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:445:25-82
 476            </intent-filter>
-477            <intent-filter>
-477-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-478                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-478-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-478-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-479            </intent-filter>
-480            <intent-filter>
-480-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-481                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-481-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-481-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-482            </intent-filter>
-483        </receiver>
-484    </application>
-485
-486</manifest>
+477
+478            <meta-data
+478-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:447:13-449:52
+479                android:name="android.service.wallpaper"
+479-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:448:17-57
+480                android:resource="@xml/wallpaper" />
+480-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:449:17-50
+481        </service>
+482
+483        <provider
+483-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+484            android:name="androidx.startup.InitializationProvider"
+484-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+485            android:authorities="com.example.icslauncher.androidx-startup"
+485-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+486            android:exported="false" >
+486-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+487            <meta-data
+487-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+488                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+488-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+489                android:value="androidx.startup" />
+489-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+490            <meta-data
+490-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/yoan_valko/.gradle/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+491                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+491-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/yoan_valko/.gradle/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+492                android:value="androidx.startup" />
+492-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/yoan_valko/.gradle/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+493            <meta-data
+493-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+494                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+494-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+495                android:value="androidx.startup" />
+495-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+496        </provider>
+497
+498        <uses-library
+498-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+499            android:name="androidx.window.extensions"
+499-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+500            android:required="false" />
+500-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+501        <uses-library
+501-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+502            android:name="androidx.window.sidecar"
+502-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+503            android:required="false" />
+503-->[androidx.window:window:1.0.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+504
+505        <receiver
+505-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+506            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+506-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+507            android:directBootAware="false"
+507-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+508            android:enabled="true"
+508-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+509            android:exported="true"
+509-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+510            android:permission="android.permission.DUMP" >
+510-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+511            <intent-filter>
+511-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+512                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+512-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+512-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+513            </intent-filter>
+514            <intent-filter>
+514-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+515                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+515-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+515-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+516            </intent-filter>
+517            <intent-filter>
+517-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+518                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+518-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+518-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+519            </intent-filter>
+520            <intent-filter>
+520-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+521                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+521-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+521-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+522            </intent-filter>
+523        </receiver>
+524    </application>
+525
+526</manifest>

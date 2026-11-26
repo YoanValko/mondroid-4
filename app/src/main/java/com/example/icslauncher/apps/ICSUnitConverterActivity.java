@@ -22,6 +22,7 @@ public class ICSUnitConverterActivity extends AppCompatActivity {
     private EditText inputView;
     private TextView resultView;
     private Button convertButton;
+    private Button swapButton;
 
     private String currentCategory = "length";
 
@@ -52,7 +53,7 @@ public class ICSUnitConverterActivity extends AppCompatActivity {
         resultView.setPadding(0, 12, 0, 12);
         root.addView(resultView);
 
-        Button convertButton = new Button(this);
+        convertButton = new Button(this);
         convertButton.setText("Convert");
         convertButton.setTextSize(16);
         convertButton.setOnClickListener(v -> performConversion());

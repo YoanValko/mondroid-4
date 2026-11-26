@@ -1,6 +1,7 @@
 package com.example.icslauncher.apps;
 
-import android.hardware.Camera;
+import android.hardware.camera2.CameraCharacteristics;
+import android.hardware.camera2.CameraManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,15 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.icslauncher.R;
 
-import java.io.IOException;
-
 /**
- * Simple flashlight using the camera flash.
+ * Simple flashlight using camera flash.
  */
 public class ICSFlashlightActivity extends AppCompatActivity {
 
-    private Camera camera;
-    private Camera.Parameters params;
+    private CameraManager cameraManager;
+    private String cameraId;
     private boolean isOn = false;
     private Button toggleButton;
 
@@ -44,42 +43,65 @@ public class ICSFlashlightActivity extends AppCompatActivity {
         toggleButton.setOnClickListener(v -> toggleFlashlight());
         root.addView(toggleButton);
 
+        TextView info = new TextView(this);
+        info.setText("Use your camera flash as a flashlight");
+        info.setTextSize(14);
+        info.setPadding(0, 16, 0, 0);
+        root.addView(info);
+
         setContentView(root);
 
+        cameraManager = (CameraManager) getSystemService(CAMERA_SERVICE);
         try {
-            camera = Camera.open();
-            params = camera.getParameters();
+            String[] cameraIds = cameraManager.getCameraIdList();
+            if (cameraIds.length > 0) {
+                cameraId = cameraIds[0];
+                CameraCharacteristics characteristics = cameraManager.getCameraCharacteristics(cameraId);
+                Boolean flashAvailable = characteristics.get(CameraCharacteristics.FLASH_INFO_AVAILABLE);
+                if (flashAvailable != null && flashAvailable) {
+                    toggleButton.setEnabled(true);
+                } else {
+                    toggleButton.setEnabled(false);
+                    toggleButton.setText("No flash available");
+                }
+            } else {
+                toggleButton.setEnabled(false);
+                toggleButton.setText("No camera available");
+            }
         } catch (Exception e) {
             toggleButton.setEnabled(false);
-            toggleButton.setText("Flashlight not available");
+            toggleButton.setText("Camera error");
         }
     }
 
     private void toggleFlashlight() {
-        if (camera == null || params == null) return;
+        if (cameraManager == null || cameraId == null) return;
 
-        if (isOn) {
-            params.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
-            camera.setParameters(params);
-            camera.stopPreview();
-            isOn = false;
-            toggleButton.setText("Turn On");
-        } else {
-            params.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
-            camera.setParameters(params);
-            camera.startPreview();
-            isOn = true;
-            toggleButton.setText("Turn Off");
+        try {
+            if (isOn) {
+                cameraManager.setTorchMode(cameraId, false);
+                isOn = false;
+                toggleButton.setText("Turn On");
+            } else {
+                cameraManager.setTorchMode(cameraId, true);
+                isOn = true;
+                toggleButton.setText("Turn Off");
+            }
+        } catch (Exception e) {
+            toggleButton.setEnabled(false);
+            toggleButton.setText("Error");
         }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (camera != null) {
-            camera.stopPreview();
-            camera.release();
-            camera = null;
+        if (cameraManager != null && cameraId != null && isOn) {
+            try {
+                cameraManager.setTorchMode(cameraId, false);
+            } catch (Exception e) {
+                // Ignore
+            }
         }
     }
 }

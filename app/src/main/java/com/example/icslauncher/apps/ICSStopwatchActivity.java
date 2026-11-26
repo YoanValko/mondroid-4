@@ -14,7 +14,7 @@ import com.example.icslauncher.R;
 import java.util.Locale;
 
 /**
- * Simple stopwatch that measures elapsed time with lap functionality.
+ * Simple stopwatch with lap functionality.
  */
 public class ICSStopwatchActivity extends AppCompatActivity {
 
@@ -62,7 +62,7 @@ public class ICSStopwatchActivity extends AppCompatActivity {
 
         lapButton = new Button(this);
         lapButton.setText("Lap");
-        lapButton.setTextSize(18);
+        lapButton.setTextSize(16);
         lapButton.setEnabled(false);
         lapButton.setOnClickListener(v -> recordLap());
         root.addView(lapButton);
@@ -100,7 +100,7 @@ public class ICSStopwatchActivity extends AppCompatActivity {
         int seconds = (int) (elapsed / 1000);
         int millis = (int) (elapsed % 1000);
         String lapText = String.format(Locale.getDefault(), "Lap %d: %02d:%02d.%02d\n",
-            lapCount, seconds / 60, seconds % 60, millis / 10);
+                lapCount, seconds / 60, seconds % 60, millis / 10);
         lapView.setText(lapText + lapView.getText());
     }
 
@@ -123,7 +123,7 @@ public class ICSStopwatchActivity extends AppCompatActivity {
             int seconds = (int) (elapsed / 1000);
             int millis = (int) (elapsed % 1000);
             timerView.setText(String.format(Locale.getDefault(), "%02d:%02d.%02d",
-                seconds / 60, seconds % 60, millis / 10));
+                    seconds / 60, seconds % 60, millis / 10));
             handler.postDelayed(this, 10);
         }
     };
