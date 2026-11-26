@@ -743,7 +743,7 @@
     <string name="about_credits">All icons, wallpapers, and artwork are original vector drawings. No proprietary system binaries are bundled.</string>
     <string name="about_description">A retro Ice Cream Sandwich-style home screen experience reimplemented for modern Android (10–16). No root, no custom recovery, no unlocked bootloader required.</string>
     <string name="about_license">Distributed under the MIT License. See LICENSE file for details.</string>
-    <string name="about_title">About ICS Home Launcher</string>
+    <string name="about_title">About Memdroid Home</string>
     <string name="about_trademark">Android, Ice Cream Sandwich, and Nexus are trademarks of Google LLC. This app is an independent, unofficial project and is not affiliated with or endorsed by Google LLC.</string>
     <string name="about_version">Version 1.0.0 • Build 1</string>
     <string name="add_app_shortcut">Add App Shortcut</string>
@@ -773,7 +773,7 @@
     <string name="app_info">App Info</string>
     <string name="app_messaging">Messaging</string>
     <string name="app_music">Music</string>
-    <string name="app_name">ICS Home Launcher</string>
+    <string name="app_name">Memdroid Home</string>
     <string name="app_notes">Notes</string>
     <string name="app_pomodoro">Pomodoro</string>
     <string name="app_recent_apps">Recent Apps</string>

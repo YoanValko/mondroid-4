@@ -48,7 +48,6 @@ MERGED from [androidx.tracing:tracing:1.0.0] /home/yoan_valko/.gradle/caches/8.1
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/cdf9d9e1d975761636cf3dc27421522b/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/458d0c79bfb4311e0a7aa2beeb4732eb/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 	package
-		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml
@@ -167,7 +166,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/yoan_valko/.gradle/ca
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:49:9-45
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:42:9-39
-activity#com.example.icslauncher.settings.WelcomeActivity
+activity#com.yoanvalko.memdroid.settings.WelcomeActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:54:9-65:20
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:58:13-52
@@ -193,7 +192,7 @@ category#android.intent.category.DEFAULT
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:63:17-75
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:63:27-73
-activity#com.example.icslauncher.launcher.ICSLauncherActivity
+activity#com.yoanvalko.memdroid.launcher.ICSLauncherActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:68:9-79:20
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:71:13-52
@@ -209,7 +208,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:69:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:75:13-78:29
-activity#com.example.icslauncher.drawer.AppDrawerActivity
+activity#com.yoanvalko.memdroid.drawer.AppDrawerActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:82:9-87:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:86:13-52
@@ -221,7 +220,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:85:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:83:13-53
-activity#com.example.icslauncher.wallpaper.WallpaperPickerActivity
+activity#com.yoanvalko.memdroid.wallpaper.WallpaperPickerActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:90:9-95:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:94:13-52
@@ -233,7 +232,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:93:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:91:13-62
-activity#com.example.icslauncher.easteregg.EasterEggActivity
+activity#com.yoanvalko.memdroid.easteregg.EasterEggActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:98:9-103:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:102:13-52
@@ -245,7 +244,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:101:13-60
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:99:13-56
-activity#com.example.icslauncher.settings.SettingsActivity
+activity#com.yoanvalko.memdroid.settings.SettingsActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:106:9-111:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:110:13-52
@@ -257,7 +256,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:109:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:107:13-54
-activity#com.example.icslauncher.settings.AboutActivity
+activity#com.yoanvalko.memdroid.settings.AboutActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:114:9-119:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:118:13-52
@@ -269,7 +268,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:117:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:115:13-51
-activity#com.example.icslauncher.settings.QuickSettingsActivity
+activity#com.yoanvalko.memdroid.settings.QuickSettingsActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:122:9-127:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:126:13-52
@@ -281,7 +280,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:125:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:123:13-59
-activity#com.example.icslauncher.apps.ICSMusicActivity
+activity#com.yoanvalko.memdroid.apps.ICSMusicActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:132:9-137:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:136:13-52
@@ -293,7 +292,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:135:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:133:13-50
-activity#com.example.icslauncher.apps.ICSGalleryActivity
+activity#com.yoanvalko.memdroid.apps.ICSGalleryActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:138:9-143:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:142:13-52
@@ -305,7 +304,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:141:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:139:13-52
-activity#com.example.icslauncher.apps.ICSCameraActivity
+activity#com.yoanvalko.memdroid.apps.ICSCameraActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:144:9-149:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:148:13-47
@@ -317,7 +316,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:147:13-65
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:145:13-51
-activity#com.example.icslauncher.apps.ICSCalculatorActivity
+activity#com.yoanvalko.memdroid.apps.ICSCalculatorActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:150:9-155:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:154:13-52
@@ -329,7 +328,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:153:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:151:13-55
-activity#com.example.icslauncher.apps.ICSClockActivity
+activity#com.yoanvalko.memdroid.apps.ICSClockActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:156:9-161:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:160:13-52
@@ -341,7 +340,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:159:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:157:13-50
-activity#com.example.icslauncher.apps.ISBrowserActivity
+activity#com.yoanvalko.memdroid.apps.ISBrowserActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:162:9-167:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:166:13-52
@@ -353,7 +352,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:165:13-65
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:163:13-51
-activity#com.example.icslauncher.apps.ISEmailActivity
+activity#com.yoanvalko.memdroid.apps.ISEmailActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:168:9-173:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:172:13-52
@@ -365,7 +364,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:171:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:169:13-49
-activity#com.example.icslauncher.apps.ICSContactsActivity
+activity#com.yoanvalko.memdroid.apps.ICSContactsActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:174:9-179:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:178:13-52
@@ -377,7 +376,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:177:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:175:13-53
-activity#com.example.icslauncher.apps.ICSCalendarActivity
+activity#com.yoanvalko.memdroid.apps.ICSCalendarActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:180:9-185:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:184:13-52
@@ -389,7 +388,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:183:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:181:13-53
-activity#com.example.icslauncher.apps.ICSMessagingActivity
+activity#com.yoanvalko.memdroid.apps.ICSMessagingActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:186:9-191:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:190:13-52
@@ -401,7 +400,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:189:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:187:13-54
-activity#com.example.icslauncher.apps.ICSPhotoViewActivity
+activity#com.yoanvalko.memdroid.apps.ICSPhotoViewActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:194:9-199:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:198:13-52
@@ -413,7 +412,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:197:13-65
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:195:13-54
-activity#com.example.icslauncher.apps.ICSNotesActivity
+activity#com.yoanvalko.memdroid.apps.ICSNotesActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:202:9-207:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:206:13-52
@@ -425,7 +424,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:205:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:203:13-50
-activity#com.example.icslauncher.apps.ICSFileManagerActivity
+activity#com.yoanvalko.memdroid.apps.ICSFileManagerActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:210:9-215:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:214:13-52
@@ -437,7 +436,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:213:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:211:13-56
-activity#com.example.icslauncher.apps.ICSSettingsActivity
+activity#com.yoanvalko.memdroid.apps.ICSSettingsActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:218:9-223:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:222:13-52
@@ -449,7 +448,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:221:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:219:13-53
-activity#com.example.icslauncher.apps.ICSAppInfoActivity
+activity#com.yoanvalko.memdroid.apps.ICSAppInfoActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:226:9-231:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:230:13-52
@@ -461,7 +460,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:229:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:227:13-52
-activity#com.example.icslauncher.apps.ICSFrequentAppsActivity
+activity#com.yoanvalko.memdroid.apps.ICSFrequentAppsActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:234:9-239:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:238:13-52
@@ -473,7 +472,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:237:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:235:13-57
-activity#com.example.icslauncher.apps.ICSRecentAppsActivity
+activity#com.yoanvalko.memdroid.apps.ICSRecentAppsActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:242:9-247:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:246:13-52
@@ -485,7 +484,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:245:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:243:13-55
-activity#com.example.icslauncher.apps.ICSSearchActivity
+activity#com.yoanvalko.memdroid.apps.ICSSearchActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:250:9-255:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:254:13-52
@@ -497,7 +496,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:253:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:251:13-51
-activity#com.example.icslauncher.apps.ICSSoundRecorderActivity
+activity#com.yoanvalko.memdroid.apps.ICSSoundRecorderActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:258:9-263:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:262:13-52
@@ -509,7 +508,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:261:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:259:13-58
-activity#com.example.icslauncher.apps.ICSCompassActivity
+activity#com.yoanvalko.memdroid.apps.ICSCompassActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:266:9-271:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:270:13-52
@@ -521,7 +520,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:269:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:267:13-52
-activity#com.example.icslauncher.apps.ICSFlashlightActivity
+activity#com.yoanvalko.memdroid.apps.ICSFlashlightActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:274:9-279:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:278:13-52
@@ -533,7 +532,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:277:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:275:13-55
-activity#com.example.icslauncher.apps.ICSTimerActivity
+activity#com.yoanvalko.memdroid.apps.ICSTimerActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:282:9-287:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:286:13-52
@@ -545,7 +544,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:285:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:283:13-50
-activity#com.example.icslauncher.apps.ICSStopwatchActivity
+activity#com.yoanvalko.memdroid.apps.ICSStopwatchActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:290:9-295:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:294:13-52
@@ -557,7 +556,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:293:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:291:13-54
-activity#com.example.icslauncher.apps.ICSPomodoroActivity
+activity#com.yoanvalko.memdroid.apps.ICSPomodoroActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:298:9-303:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:302:13-52
@@ -569,7 +568,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:301:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:299:13-53
-activity#com.example.icslauncher.apps.ICSTodoActivity
+activity#com.yoanvalko.memdroid.apps.ICSTodoActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:306:9-311:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:310:13-52
@@ -581,7 +580,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:309:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:307:13-49
-activity#com.example.icslauncher.apps.ICSWeatherActivity
+activity#com.yoanvalko.memdroid.apps.ICSWeatherActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:314:9-319:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:318:13-52
@@ -593,7 +592,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:317:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:315:13-52
-activity#com.example.icslauncher.apps.ICSFortuneActivity
+activity#com.yoanvalko.memdroid.apps.ICSFortuneActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:322:9-327:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:326:13-52
@@ -605,7 +604,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:325:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:323:13-52
-activity#com.example.icslauncher.apps.ICTipCalculatorActivity
+activity#com.yoanvalko.memdroid.apps.ICTipCalculatorActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:330:9-335:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:334:13-52
@@ -617,7 +616,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:333:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:331:13-57
-activity#com.example.icslauncher.apps.ICSUnitConverterActivity
+activity#com.yoanvalko.memdroid.apps.ICSUnitConverterActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:338:9-343:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:342:13-52
@@ -629,7 +628,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:341:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-58
-activity#com.example.icslauncher.apps.ICSCurrencyConverterActivity
+activity#com.yoanvalko.memdroid.apps.ICSCurrencyConverterActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:346:9-351:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:350:13-52
@@ -641,7 +640,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:349:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:347:13-62
-activity#com.example.icslauncher.apps.ICSVAGECalculatorActivity
+activity#com.yoanvalko.memdroid.apps.ICSVAGECalculatorActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:354:9-359:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:358:13-52
@@ -653,7 +652,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:357:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:355:13-59
-activity#com.example.icslauncher.apps.ICSCountdownActivity
+activity#com.yoanvalko.memdroid.apps.ICSCountdownActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:362:9-367:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:366:13-52
@@ -665,7 +664,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:365:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:363:13-54
-activity#com.example.icslauncher.apps.ICSBMICalculatorActivity
+activity#com.yoanvalko.memdroid.apps.ICSBMICalculatorActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:370:9-375:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:374:13-52
@@ -677,7 +676,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:373:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:371:13-58
-activity#com.example.icslauncher.apps.ICSCameraFlashActivity
+activity#com.yoanvalko.memdroid.apps.ICSCameraFlashActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:386:9-391:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:390:13-52
@@ -689,7 +688,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:389:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:387:13-56
-activity#com.example.icslauncher.apps.ICSSwimStopwatchActivity
+activity#com.yoanvalko.memdroid.apps.ICSSwimStopwatchActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:394:9-399:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:398:13-52
@@ -701,7 +700,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:397:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:395:13-58
-activity#com.example.icslauncher.apps.ICSDeviceInfoActivity
+activity#com.yoanvalko.memdroid.apps.ICSDeviceInfoActivity
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:418:9-423:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:422:13-52
@@ -713,7 +712,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:421:13-53
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:419:13-55
-receiver#com.example.icslauncher.apps.ICSClockWidgetProvider
+receiver#com.yoanvalko.memdroid.apps.ICSClockWidgetProvider
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:426:9-435:20
 	android:exported
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:428:13-36
@@ -731,7 +730,7 @@ ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifes
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:434:17-58
 	android:name
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:433:17-58
-service#com.example.icslauncher.wallpaper.ICSWallpaperService
+service#com.yoanvalko.memdroid.wallpaper.ICSWallpaperService
 ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:440:9-450:19
 	android:exported
 		ADDED from /home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:443:13-36
@@ -891,7 +890,7 @@ ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/tr
 		ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-permission#com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.yoanvalko.memdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
@@ -901,7 +900,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-uses-permission#com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.yoanvalko.memdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94

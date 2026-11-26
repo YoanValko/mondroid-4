@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.icslauncher"
+3    package="com.yoanvalko.memdroid"
 4    android:versionCode="1"
 5    android:versionName="4.0.4-1.0" >
 6
@@ -88,18 +88,18 @@
 54
 55    <permission
 55-->[androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-56        android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+56        android:name="com.yoanvalko.memdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 56-->[androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 57        android:protectionLevel="signature" />
 57-->[androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 58
-59    <uses-permission android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+59    <uses-permission android:name="com.yoanvalko.memdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 59-->[androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 59-->[androidx.core:core:1.13.1] /home/yoan_valko/.gradle/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 60
 61    <application
 61-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-451:19
-62        android:name="com.example.icslauncher.ICSApplication"
+62        android:name="com.yoanvalko.memdroid.ICSApplication"
 62-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:42:9-39
 63        android:allowBackup="true"
 63-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:43:9-35
@@ -127,7 +127,7 @@
 76        <!-- Welcome screen (first-run) — registered as HOME entry point. -->
 77        <activity
 77-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:54:9-65:20
-78            android:name="com.example.icslauncher.settings.WelcomeActivity"
+78            android:name="com.yoanvalko.memdroid.settings.WelcomeActivity"
 78-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:55:13-53
 79            android:exported="true"
 79-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:59:13-36
@@ -155,7 +155,7 @@
 91        <!-- Launcher (home screen) — opened from welcome or directly. -->
 92        <activity
 92-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:68:9-79:20
-93            android:name="com.example.icslauncher.launcher.ICSLauncherActivity"
+93            android:name="com.yoanvalko.memdroid.launcher.ICSLauncherActivity"
 93-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:69:13-57
 94            android:exported="true"
 94-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:74:13-36
@@ -182,7 +182,7 @@
 106        <!-- App drawer (full list of installed launcher apps). -->
 107        <activity
 107-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:82:9-87:38
-108            android:name="com.example.icslauncher.drawer.AppDrawerActivity"
+108            android:name="com.yoanvalko.memdroid.drawer.AppDrawerActivity"
 108-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:83:13-53
 109            android:exported="true"
 109-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:87:13-36
@@ -196,7 +196,7 @@
 114        <!-- Wallpaper picker (static + live wallpaper selection). -->
 115        <activity
 115-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:90:9-95:38
-116            android:name="com.example.icslauncher.wallpaper.WallpaperPickerActivity"
+116            android:name="com.yoanvalko.memdroid.wallpaper.WallpaperPickerActivity"
 116-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:91:13-62
 117            android:exported="true"
 117-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:95:13-36
@@ -210,7 +210,7 @@
 122        <!-- ICS Easter egg (self-contained activity). -->
 123        <activity
 123-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:98:9-103:38
-124            android:name="com.example.icslauncher.easteregg.EasterEggActivity"
+124            android:name="com.yoanvalko.memdroid.easteregg.EasterEggActivity"
 124-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:99:13-56
 125            android:exported="true"
 125-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:103:13-36
@@ -224,7 +224,7 @@
 130        <!-- Settings (grid size, dark theme, ...). -->
 131        <activity
 131-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:106:9-111:38
-132            android:name="com.example.icslauncher.settings.SettingsActivity"
+132            android:name="com.yoanvalko.memdroid.settings.SettingsActivity"
 132-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:107:13-54
 133            android:exported="true"
 133-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:111:13-36
@@ -238,7 +238,7 @@
 138        <!-- About screen. -->
 139        <activity
 139-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:114:9-119:38
-140            android:name="com.example.icslauncher.settings.AboutActivity"
+140            android:name="com.yoanvalko.memdroid.settings.AboutActivity"
 140-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:115:13-51
 141            android:exported="true"
 141-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:119:13-36
@@ -252,7 +252,7 @@
 146        <!-- Quick Settings panel. -->
 147        <activity
 147-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:122:9-127:38
-148            android:name="com.example.icslauncher.settings.QuickSettingsActivity"
+148            android:name="com.yoanvalko.memdroid.settings.QuickSettingsActivity"
 148-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:123:13-59
 149            android:exported="true"
 149-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:127:13-36
@@ -270,7 +270,7 @@
 158        -->
 159        <activity
 159-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:132:9-137:38
-160            android:name="com.example.icslauncher.apps.ICSMusicActivity"
+160            android:name="com.yoanvalko.memdroid.apps.ICSMusicActivity"
 160-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:133:13-50
 161            android:exported="true"
 161-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:137:13-36
@@ -282,7 +282,7 @@
 164-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:135:13-53
 165        <activity
 165-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:138:9-143:38
-166            android:name="com.example.icslauncher.apps.ICSGalleryActivity"
+166            android:name="com.yoanvalko.memdroid.apps.ICSGalleryActivity"
 166-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:139:13-52
 167            android:exported="true"
 167-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:143:13-36
@@ -294,7 +294,7 @@
 170-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:141:13-53
 171        <activity
 171-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:144:9-149:38
-172            android:name="com.example.icslauncher.apps.ICSCameraActivity"
+172            android:name="com.yoanvalko.memdroid.apps.ICSCameraActivity"
 172-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:145:13-51
 173            android:exported="true"
 173-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:149:13-36
@@ -306,7 +306,7 @@
 176-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:147:13-65
 177        <activity
 177-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:150:9-155:38
-178            android:name="com.example.icslauncher.apps.ICSCalculatorActivity"
+178            android:name="com.yoanvalko.memdroid.apps.ICSCalculatorActivity"
 178-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:151:13-55
 179            android:exported="true"
 179-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:155:13-36
@@ -318,7 +318,7 @@
 182-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:153:13-53
 183        <activity
 183-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:156:9-161:38
-184            android:name="com.example.icslauncher.apps.ICSClockActivity"
+184            android:name="com.yoanvalko.memdroid.apps.ICSClockActivity"
 184-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:157:13-50
 185            android:exported="true"
 185-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:161:13-36
@@ -330,7 +330,7 @@
 188-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:159:13-53
 189        <activity
 189-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:162:9-167:38
-190            android:name="com.example.icslauncher.apps.ISBrowserActivity"
+190            android:name="com.yoanvalko.memdroid.apps.ISBrowserActivity"
 190-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:163:13-51
 191            android:exported="true"
 191-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:167:13-36
@@ -342,7 +342,7 @@
 194-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:165:13-65
 195        <activity
 195-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:168:9-173:38
-196            android:name="com.example.icslauncher.apps.ISEmailActivity"
+196            android:name="com.yoanvalko.memdroid.apps.ISEmailActivity"
 196-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:169:13-49
 197            android:exported="true"
 197-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:173:13-36
@@ -354,7 +354,7 @@
 200-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:171:13-53
 201        <activity
 201-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:174:9-179:38
-202            android:name="com.example.icslauncher.apps.ICSContactsActivity"
+202            android:name="com.yoanvalko.memdroid.apps.ICSContactsActivity"
 202-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:175:13-53
 203            android:exported="true"
 203-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:179:13-36
@@ -366,7 +366,7 @@
 206-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:177:13-53
 207        <activity
 207-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:180:9-185:38
-208            android:name="com.example.icslauncher.apps.ICSCalendarActivity"
+208            android:name="com.yoanvalko.memdroid.apps.ICSCalendarActivity"
 208-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:181:13-53
 209            android:exported="true"
 209-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:185:13-36
@@ -378,7 +378,7 @@
 212-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:183:13-53
 213        <activity
 213-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:186:9-191:38
-214            android:name="com.example.icslauncher.apps.ICSMessagingActivity"
+214            android:name="com.yoanvalko.memdroid.apps.ICSMessagingActivity"
 214-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:187:13-54
 215            android:exported="true"
 215-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:191:13-36
@@ -392,7 +392,7 @@
 220        <!-- Photo viewer (opened from Gallery). -->
 221        <activity
 221-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:194:9-199:38
-222            android:name="com.example.icslauncher.apps.ICSPhotoViewActivity"
+222            android:name="com.yoanvalko.memdroid.apps.ICSPhotoViewActivity"
 222-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:195:13-54
 223            android:exported="true"
 223-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:199:13-36
@@ -406,7 +406,7 @@
 228        <!-- Notes app. -->
 229        <activity
 229-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:202:9-207:38
-230            android:name="com.example.icslauncher.apps.ICSNotesActivity"
+230            android:name="com.yoanvalko.memdroid.apps.ICSNotesActivity"
 230-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:203:13-50
 231            android:exported="true"
 231-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:207:13-36
@@ -420,7 +420,7 @@
 236        <!-- File Manager app. -->
 237        <activity
 237-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:210:9-215:38
-238            android:name="com.example.icslauncher.apps.ICSFileManagerActivity"
+238            android:name="com.yoanvalko.memdroid.apps.ICSFileManagerActivity"
 238-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:211:13-56
 239            android:exported="true"
 239-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:215:13-36
@@ -434,7 +434,7 @@
 244        <!-- Settings app. -->
 245        <activity
 245-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:218:9-223:38
-246            android:name="com.example.icslauncher.apps.ICSSettingsActivity"
+246            android:name="com.yoanvalko.memdroid.apps.ICSSettingsActivity"
 246-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:219:13-53
 247            android:exported="true"
 247-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:223:13-36
@@ -448,7 +448,7 @@
 252        <!-- App Info activity. -->
 253        <activity
 253-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:226:9-231:38
-254            android:name="com.example.icslauncher.apps.ICSAppInfoActivity"
+254            android:name="com.yoanvalko.memdroid.apps.ICSAppInfoActivity"
 254-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:227:13-52
 255            android:exported="true"
 255-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:231:13-36
@@ -462,7 +462,7 @@
 260        <!-- Frequent Apps activity. -->
 261        <activity
 261-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:234:9-239:38
-262            android:name="com.example.icslauncher.apps.ICSFrequentAppsActivity"
+262            android:name="com.yoanvalko.memdroid.apps.ICSFrequentAppsActivity"
 262-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:235:13-57
 263            android:exported="true"
 263-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:239:13-36
@@ -476,7 +476,7 @@
 268        <!-- Recent Apps activity. -->
 269        <activity
 269-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:242:9-247:38
-270            android:name="com.example.icslauncher.apps.ICSRecentAppsActivity"
+270            android:name="com.yoanvalko.memdroid.apps.ICSRecentAppsActivity"
 270-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:243:13-55
 271            android:exported="true"
 271-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:247:13-36
@@ -490,7 +490,7 @@
 276        <!-- Search activity. -->
 277        <activity
 277-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:250:9-255:38
-278            android:name="com.example.icslauncher.apps.ICSSearchActivity"
+278            android:name="com.yoanvalko.memdroid.apps.ICSSearchActivity"
 278-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:251:13-51
 279            android:exported="true"
 279-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:255:13-36
@@ -504,7 +504,7 @@
 284        <!-- Sound Recorder activity. -->
 285        <activity
 285-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:258:9-263:38
-286            android:name="com.example.icslauncher.apps.ICSSoundRecorderActivity"
+286            android:name="com.yoanvalko.memdroid.apps.ICSSoundRecorderActivity"
 286-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:259:13-58
 287            android:exported="true"
 287-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:263:13-36
@@ -518,7 +518,7 @@
 292        <!-- Compass activity. -->
 293        <activity
 293-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:266:9-271:38
-294            android:name="com.example.icslauncher.apps.ICSCompassActivity"
+294            android:name="com.yoanvalko.memdroid.apps.ICSCompassActivity"
 294-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:267:13-52
 295            android:exported="true"
 295-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:271:13-36
@@ -532,7 +532,7 @@
 300        <!-- Flashlight activity. -->
 301        <activity
 301-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:274:9-279:38
-302            android:name="com.example.icslauncher.apps.ICSFlashlightActivity"
+302            android:name="com.yoanvalko.memdroid.apps.ICSFlashlightActivity"
 302-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:275:13-55
 303            android:exported="true"
 303-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:279:13-36
@@ -546,7 +546,7 @@
 308        <!-- Timer activity. -->
 309        <activity
 309-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:282:9-287:38
-310            android:name="com.example.icslauncher.apps.ICSTimerActivity"
+310            android:name="com.yoanvalko.memdroid.apps.ICSTimerActivity"
 310-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:283:13-50
 311            android:exported="true"
 311-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:287:13-36
@@ -560,7 +560,7 @@
 316        <!-- Stopwatch activity. -->
 317        <activity
 317-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:290:9-295:38
-318            android:name="com.example.icslauncher.apps.ICSStopwatchActivity"
+318            android:name="com.yoanvalko.memdroid.apps.ICSStopwatchActivity"
 318-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:291:13-54
 319            android:exported="true"
 319-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:295:13-36
@@ -574,7 +574,7 @@
 324        <!-- Pomodoro activity. -->
 325        <activity
 325-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:298:9-303:38
-326            android:name="com.example.icslauncher.apps.ICSPomodoroActivity"
+326            android:name="com.yoanvalko.memdroid.apps.ICSPomodoroActivity"
 326-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:299:13-53
 327            android:exported="true"
 327-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:303:13-36
@@ -588,7 +588,7 @@
 332        <!-- Todo activity. -->
 333        <activity
 333-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:306:9-311:38
-334            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+334            android:name="com.yoanvalko.memdroid.apps.ICSTodoActivity"
 334-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:307:13-49
 335            android:exported="true"
 335-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:311:13-36
@@ -602,7 +602,7 @@
 340        <!-- Weather activity. -->
 341        <activity
 341-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:314:9-319:38
-342            android:name="com.example.icslauncher.apps.ICSWeatherActivity"
+342            android:name="com.yoanvalko.memdroid.apps.ICSWeatherActivity"
 342-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:315:13-52
 343            android:exported="true"
 343-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:319:13-36
@@ -616,7 +616,7 @@
 348        <!-- Fortune activity. -->
 349        <activity
 349-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:322:9-327:38
-350            android:name="com.example.icslauncher.apps.ICSFortuneActivity"
+350            android:name="com.yoanvalko.memdroid.apps.ICSFortuneActivity"
 350-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:323:13-52
 351            android:exported="true"
 351-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:327:13-36
@@ -630,7 +630,7 @@
 356        <!-- Tip Calculator activity. -->
 357        <activity
 357-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:330:9-335:38
-358            android:name="com.example.icslauncher.apps.ICTipCalculatorActivity"
+358            android:name="com.yoanvalko.memdroid.apps.ICTipCalculatorActivity"
 358-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:331:13-57
 359            android:exported="true"
 359-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:335:13-36
@@ -644,7 +644,7 @@
 364        <!-- Unit Converter activity. -->
 365        <activity
 365-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:338:9-343:38
-366            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+366            android:name="com.yoanvalko.memdroid.apps.ICSUnitConverterActivity"
 366-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-58
 367            android:exported="true"
 367-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:343:13-36
@@ -658,7 +658,7 @@
 372        <!-- Currency Converter activity. -->
 373        <activity
 373-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:346:9-351:38
-374            android:name="com.example.icslauncher.apps.ICSCurrencyConverterActivity"
+374            android:name="com.yoanvalko.memdroid.apps.ICSCurrencyConverterActivity"
 374-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:347:13-62
 375            android:exported="true"
 375-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:351:13-36
@@ -672,7 +672,7 @@
 380        <!-- Age Calculator activity. -->
 381        <activity
 381-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:354:9-359:38
-382            android:name="com.example.icslauncher.apps.ICSVAGECalculatorActivity"
+382            android:name="com.yoanvalko.memdroid.apps.ICSVAGECalculatorActivity"
 382-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:355:13-59
 383            android:exported="true"
 383-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:359:13-36
@@ -686,7 +686,7 @@
 388        <!-- Countdown Timer activity. -->
 389        <activity
 389-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:362:9-367:38
-390            android:name="com.example.icslauncher.apps.ICSCountdownActivity"
+390            android:name="com.yoanvalko.memdroid.apps.ICSCountdownActivity"
 390-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:363:13-54
 391            android:exported="true"
 391-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:367:13-36
@@ -700,7 +700,7 @@
 396        <!-- BMI Calculator activity. -->
 397        <activity
 397-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:370:9-375:38
-398            android:name="com.example.icslauncher.apps.ICSBMICalculatorActivity"
+398            android:name="com.yoanvalko.memdroid.apps.ICSBMICalculatorActivity"
 398-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:371:13-58
 399            android:exported="true"
 399-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:375:13-36
@@ -714,7 +714,7 @@
 404        <!-- Unit Converter activity. -->
 405        <activity
 405-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:338:9-343:38
-406            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+406            android:name="com.yoanvalko.memdroid.apps.ICSUnitConverterActivity"
 406-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-58
 407            android:exported="true"
 407-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:343:13-36
@@ -728,7 +728,7 @@
 412        <!-- Flashlight activity. -->
 413        <activity
 413-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:386:9-391:38
-414            android:name="com.example.icslauncher.apps.ICSCameraFlashActivity"
+414            android:name="com.yoanvalko.memdroid.apps.ICSCameraFlashActivity"
 414-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:387:13-56
 415            android:exported="true"
 415-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:391:13-36
@@ -742,7 +742,7 @@
 420        <!-- Stopwatch activity. -->
 421        <activity
 421-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:394:9-399:38
-422            android:name="com.example.icslauncher.apps.ICSSwimStopwatchActivity"
+422            android:name="com.yoanvalko.memdroid.apps.ICSSwimStopwatchActivity"
 422-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:395:13-58
 423            android:exported="true"
 423-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:399:13-36
@@ -756,7 +756,7 @@
 428        <!-- Weather activity. -->
 429        <activity
 429-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:314:9-319:38
-430            android:name="com.example.icslauncher.apps.ICSWeatherActivity"
+430            android:name="com.yoanvalko.memdroid.apps.ICSWeatherActivity"
 430-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:315:13-52
 431            android:exported="true"
 431-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:319:13-36
@@ -770,7 +770,7 @@
 436        <!-- Todo activity. -->
 437        <activity
 437-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:306:9-311:38
-438            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+438            android:name="com.yoanvalko.memdroid.apps.ICSTodoActivity"
 438-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:307:13-49
 439            android:exported="true"
 439-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:311:13-36
@@ -784,7 +784,7 @@
 444        <!-- Device Info activity. -->
 445        <activity
 445-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:418:9-423:38
-446            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
+446            android:name="com.yoanvalko.memdroid.apps.ICSDeviceInfoActivity"
 446-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:419:13-55
 447            android:exported="true"
 447-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:423:13-36
@@ -798,7 +798,7 @@
 452        <!-- Clock widget provider. -->
 453        <receiver
 453-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:426:9-435:20
-454            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
+454            android:name="com.yoanvalko.memdroid.apps.ICSClockWidgetProvider"
 454-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:427:13-56
 455            android:exported="true" >
 455-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:428:13-36
@@ -824,7 +824,7 @@
 469        -->
 470        <service
 470-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:440:9-450:19
-471            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
+471            android:name="com.yoanvalko.memdroid.wallpaper.ICSWallpaperService"
 471-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:441:13-58
 472            android:exported="true"
 472-->/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/AndroidManifest.xml:443:13-36
@@ -849,7 +849,7 @@
 483-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
 484            android:name="androidx.startup.InitializationProvider"
 484-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
-485            android:authorities="com.example.icslauncher.androidx-startup"
+485            android:authorities="com.yoanvalko.memdroid.androidx-startup"
 485-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
 486            android:exported="false" >
 486-->[androidx.emoji2:emoji2:1.3.0] /home/yoan_valko/.gradle/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37

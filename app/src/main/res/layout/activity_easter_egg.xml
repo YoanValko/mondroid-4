@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground">
 
-    <com.example.icslauncher.easteregg.EasterEggView
+    <com.yoanvalko.memdroid.easteregg.EasterEggView
         android:id="@+id/easter_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

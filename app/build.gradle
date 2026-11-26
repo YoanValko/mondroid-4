@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.icslauncher'
+    namespace 'com.yoanvalko.memdroid'
     compileSdk 36
 
     defaultConfig {
-        applicationId 'com.example.icslauncher'
+        applicationId 'com.yoanvalko.memdroid'
         minSdk 29
         targetSdk 36
         versionCode 1

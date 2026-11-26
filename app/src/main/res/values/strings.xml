@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ICS Home Launcher</string>
+    <string name="app_name">Memdroid Home</string>
 
     <!-- Home screen -->
     <string name="app_drawer">Apps</string>
@@ -106,7 +106,7 @@
 
     <!-- About -->
     <string name="about_version">Version 1.0.0 &#8226; Build 1</string>
-    <string name="about_title">About ICS Home Launcher</string>
+    <string name="about_title">About Memdroid Home</string>
     <string name="about_description">A retro Ice Cream Sandwich-style home screen experience reimplemented for modern Android (10–16). No root, no custom recovery, no unlocked bootloader required.</string>
     <string name="about_credits">All icons, wallpapers, and artwork are original vector drawings. No proprietary system binaries are bundled.</string>
     <string name="about_license">Distributed under the MIT License. See LICENSE file for details.</string>

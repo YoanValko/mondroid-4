@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.icslauncher"
+    package="com.yoanvalko.memdroid"
     android:versionCode="1"
     android:versionName="4.0.4-1.0" >
 
@@ -53,13 +53,13 @@
         android:required="true" />
 
     <permission
-        android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.yoanvalko.memdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.icslauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.yoanvalko.memdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.example.icslauncher.ICSApplication"
+        android:name="com.yoanvalko.memdroid.ICSApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -75,7 +75,7 @@
 
         <!-- Welcome screen (first-run) — registered as HOME entry point. -->
         <activity
-            android:name="com.example.icslauncher.settings.WelcomeActivity"
+            android:name="com.yoanvalko.memdroid.settings.WelcomeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="unspecified"
@@ -90,7 +90,7 @@
 
         <!-- Launcher (home screen) — opened from welcome or directly. -->
         <activity
-            android:name="com.example.icslauncher.launcher.ICSLauncherActivity"
+            android:name="com.yoanvalko.memdroid.launcher.ICSLauncherActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -105,7 +105,7 @@
 
         <!-- App drawer (full list of installed launcher apps). -->
         <activity
-            android:name="com.example.icslauncher.drawer.AppDrawerActivity"
+            android:name="com.yoanvalko.memdroid.drawer.AppDrawerActivity"
             android:exported="true"
             android:label="@string/app_drawer"
             android:screenOrientation="unspecified"
@@ -113,7 +113,7 @@
 
         <!-- Wallpaper picker (static + live wallpaper selection). -->
         <activity
-            android:name="com.example.icslauncher.wallpaper.WallpaperPickerActivity"
+            android:name="com.yoanvalko.memdroid.wallpaper.WallpaperPickerActivity"
             android:exported="true"
             android:label="@string/wallpaper"
             android:screenOrientation="unspecified"
@@ -121,7 +121,7 @@
 
         <!-- ICS Easter egg (self-contained activity). -->
         <activity
-            android:name="com.example.icslauncher.easteregg.EasterEggActivity"
+            android:name="com.yoanvalko.memdroid.easteregg.EasterEggActivity"
             android:exported="true"
             android:label="@string/easter_egg"
             android:screenOrientation="unspecified"
@@ -129,7 +129,7 @@
 
         <!-- Settings (grid size, dark theme, ...). -->
         <activity
-            android:name="com.example.icslauncher.settings.SettingsActivity"
+            android:name="com.yoanvalko.memdroid.settings.SettingsActivity"
             android:exported="true"
             android:label="@string/settings"
             android:screenOrientation="unspecified"
@@ -137,7 +137,7 @@
 
         <!-- About screen. -->
         <activity
-            android:name="com.example.icslauncher.settings.AboutActivity"
+            android:name="com.yoanvalko.memdroid.settings.AboutActivity"
             android:exported="true"
             android:label="@string/settings_about"
             android:screenOrientation="unspecified"
@@ -145,7 +145,7 @@
 
         <!-- Quick Settings panel. -->
         <activity
-            android:name="com.example.icslauncher.settings.QuickSettingsActivity"
+            android:name="com.yoanvalko.memdroid.settings.QuickSettingsActivity"
             android:exported="true"
             android:label="@string/quick_settings"
             android:screenOrientation="unspecified"
@@ -157,61 +157,61 @@
              =====================================================================
         -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSMusicActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSMusicActivity"
             android:exported="true"
             android:label="@string/app_music"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSGalleryActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSGalleryActivity"
             android:exported="true"
             android:label="@string/app_gallery"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSCameraActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCameraActivity"
             android:exported="true"
             android:label="@string/app_camera"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.ICSLauncher.NoActionBar" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSCalculatorActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCalculatorActivity"
             android:exported="true"
             android:label="@string/app_calculator"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSClockActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSClockActivity"
             android:exported="true"
             android:label="@string/app_clock"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ISBrowserActivity"
+            android:name="com.yoanvalko.memdroid.apps.ISBrowserActivity"
             android:exported="true"
             android:label="@string/app_browser"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher.NoActionBar" />
         <activity
-            android:name="com.example.icslauncher.apps.ISEmailActivity"
+            android:name="com.yoanvalko.memdroid.apps.ISEmailActivity"
             android:exported="true"
             android:label="@string/app_email"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSContactsActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSContactsActivity"
             android:exported="true"
             android:label="@string/app_contacts"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSCalendarActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCalendarActivity"
             android:exported="true"
             android:label="@string/app_calendar"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
         <activity
-            android:name="com.example.icslauncher.apps.ICSMessagingActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSMessagingActivity"
             android:exported="true"
             android:label="@string/app_messaging"
             android:screenOrientation="unspecified"
@@ -219,7 +219,7 @@
 
         <!-- Photo viewer (opened from Gallery). -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSPhotoViewActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSPhotoViewActivity"
             android:exported="true"
             android:label="@string/app_gallery"
             android:screenOrientation="unspecified"
@@ -227,7 +227,7 @@
 
         <!-- Notes app. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSNotesActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSNotesActivity"
             android:exported="true"
             android:label="@string/app_notes"
             android:screenOrientation="unspecified"
@@ -235,7 +235,7 @@
 
         <!-- File Manager app. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSFileManagerActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSFileManagerActivity"
             android:exported="true"
             android:label="@string/app_file_manager"
             android:screenOrientation="unspecified"
@@ -243,7 +243,7 @@
 
         <!-- Settings app. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSSettingsActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSSettingsActivity"
             android:exported="true"
             android:label="@string/app_settings"
             android:screenOrientation="unspecified"
@@ -251,7 +251,7 @@
 
         <!-- App Info activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSAppInfoActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSAppInfoActivity"
             android:exported="true"
             android:label="@string/app_info"
             android:screenOrientation="unspecified"
@@ -259,7 +259,7 @@
 
         <!-- Frequent Apps activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSFrequentAppsActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSFrequentAppsActivity"
             android:exported="true"
             android:label="@string/app_frequent_apps"
             android:screenOrientation="unspecified"
@@ -267,7 +267,7 @@
 
         <!-- Recent Apps activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSRecentAppsActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSRecentAppsActivity"
             android:exported="true"
             android:label="@string/app_recent_apps"
             android:screenOrientation="unspecified"
@@ -275,7 +275,7 @@
 
         <!-- Search activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSSearchActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSSearchActivity"
             android:exported="true"
             android:label="@string/app_search"
             android:screenOrientation="unspecified"
@@ -283,7 +283,7 @@
 
         <!-- Sound Recorder activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSSoundRecorderActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSSoundRecorderActivity"
             android:exported="true"
             android:label="@string/app_sound_recorder"
             android:screenOrientation="unspecified"
@@ -291,7 +291,7 @@
 
         <!-- Compass activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSCompassActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCompassActivity"
             android:exported="true"
             android:label="@string/app_compass"
             android:screenOrientation="unspecified"
@@ -299,7 +299,7 @@
 
         <!-- Flashlight activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSFlashlightActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSFlashlightActivity"
             android:exported="true"
             android:label="@string/app_flashlight"
             android:screenOrientation="unspecified"
@@ -307,7 +307,7 @@
 
         <!-- Timer activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSTimerActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSTimerActivity"
             android:exported="true"
             android:label="@string/app_timer"
             android:screenOrientation="unspecified"
@@ -315,7 +315,7 @@
 
         <!-- Stopwatch activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSStopwatchActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSStopwatchActivity"
             android:exported="true"
             android:label="@string/app_stopwatch"
             android:screenOrientation="unspecified"
@@ -323,7 +323,7 @@
 
         <!-- Pomodoro activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSPomodoroActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSPomodoroActivity"
             android:exported="true"
             android:label="@string/app_pomodoro"
             android:screenOrientation="unspecified"
@@ -331,7 +331,7 @@
 
         <!-- Todo activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSTodoActivity"
             android:exported="true"
             android:label="@string/app_todo"
             android:screenOrientation="unspecified"
@@ -339,7 +339,7 @@
 
         <!-- Weather activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSWeatherActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSWeatherActivity"
             android:exported="true"
             android:label="@string/app_weather"
             android:screenOrientation="unspecified"
@@ -347,7 +347,7 @@
 
         <!-- Fortune activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSFortuneActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSFortuneActivity"
             android:exported="true"
             android:label="@string/app_fortune"
             android:screenOrientation="unspecified"
@@ -355,7 +355,7 @@
 
         <!-- Tip Calculator activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICTipCalculatorActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICTipCalculatorActivity"
             android:exported="true"
             android:label="@string/app_tip_calculator"
             android:screenOrientation="unspecified"
@@ -363,7 +363,7 @@
 
         <!-- Unit Converter activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSUnitConverterActivity"
             android:exported="true"
             android:label="@string/app_unit_converter"
             android:screenOrientation="unspecified"
@@ -371,7 +371,7 @@
 
         <!-- Currency Converter activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSCurrencyConverterActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCurrencyConverterActivity"
             android:exported="true"
             android:label="@string/app_currency_converter"
             android:screenOrientation="unspecified"
@@ -379,7 +379,7 @@
 
         <!-- Age Calculator activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSVAGECalculatorActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSVAGECalculatorActivity"
             android:exported="true"
             android:label="@string/app_age_calculator"
             android:screenOrientation="unspecified"
@@ -387,7 +387,7 @@
 
         <!-- Countdown Timer activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSCountdownActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCountdownActivity"
             android:exported="true"
             android:label="@string/app_countdown"
             android:screenOrientation="unspecified"
@@ -395,7 +395,7 @@
 
         <!-- BMI Calculator activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSBMICalculatorActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSBMICalculatorActivity"
             android:exported="true"
             android:label="@string/app_bmi_calculator"
             android:screenOrientation="unspecified"
@@ -403,7 +403,7 @@
 
         <!-- Unit Converter activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSUnitConverterActivity"
             android:exported="true"
             android:label="@string/app_unit_converter"
             android:screenOrientation="unspecified"
@@ -411,7 +411,7 @@
 
         <!-- Flashlight activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSCameraFlashActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSCameraFlashActivity"
             android:exported="true"
             android:label="@string/app_flashlight"
             android:screenOrientation="unspecified"
@@ -419,7 +419,7 @@
 
         <!-- Stopwatch activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSSwimStopwatchActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSSwimStopwatchActivity"
             android:exported="true"
             android:label="@string/app_stopwatch"
             android:screenOrientation="unspecified"
@@ -427,7 +427,7 @@
 
         <!-- Weather activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSWeatherActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSWeatherActivity"
             android:exported="true"
             android:label="@string/app_weather"
             android:screenOrientation="unspecified"
@@ -435,7 +435,7 @@
 
         <!-- Todo activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSTodoActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSTodoActivity"
             android:exported="true"
             android:label="@string/app_todo"
             android:screenOrientation="unspecified"
@@ -443,7 +443,7 @@
 
         <!-- Device Info activity. -->
         <activity
-            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
+            android:name="com.yoanvalko.memdroid.apps.ICSDeviceInfoActivity"
             android:exported="true"
             android:label="@string/app_device_info"
             android:screenOrientation="unspecified"
@@ -451,7 +451,7 @@
 
         <!-- Clock widget provider. -->
         <receiver
-            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
+            android:name="com.yoanvalko.memdroid.apps.ICSClockWidgetProvider"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -468,7 +468,7 @@
              =====================================================================
         -->
         <service
-            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
+            android:name="com.yoanvalko.memdroid.wallpaper.ICSWallpaperService"
             android:exported="true"
             android:permission="android.permission.BIND_WALLPAPER" >
             <intent-filter>
@@ -482,7 +482,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.icslauncher.androidx-startup"
+            android:authorities="com.yoanvalko.memdroid.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
