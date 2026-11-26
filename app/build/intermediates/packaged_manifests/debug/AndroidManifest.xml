@@ -337,6 +337,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Notes activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSNotesActivity"
+            android:exported="true"
+            android:label="@string/app_notes"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Weather activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSWeatherActivity"

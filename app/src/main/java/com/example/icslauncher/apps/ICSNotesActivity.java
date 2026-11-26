@@ -1,7 +1,6 @@
 package com.example.icslauncher.apps;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -13,16 +12,13 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.icslauncher.R;
 
-/**
- * Reimplementation of a Nexus-era Notes app. Stores notes in a local SQLite database
- * (no network, no proprietary code).
- */
 public class ICSNotesActivity extends AppCompatActivity {
 
     private static final String DB_NAME = "ics_notes.db";
@@ -40,7 +36,7 @@ public class ICSNotesActivity extends AppCompatActivity {
     private ListView notesList;
 
     private static final class NotesDbHelper extends SQLiteOpenHelper {
-        NotesDbHelper(Context context) {
+        NotesDbHelper(ICSNotesActivity context) {
             super(context, DB_NAME, null, DB_VERSION);
         }
 
@@ -68,27 +64,34 @@ public class ICSNotesActivity extends AppCompatActivity {
         root.setOrientation(LinearLayout.VERTICAL);
         root.setPadding(16, 16, 16, 16);
 
-        android.widget.TextView hint = new android.widget.TextView(this);
-        hint.setText("Create a new note:");
-        hint.setTextSize(14);
-        hint.setPadding(0, 0, 0, 8);
-        root.addView(hint);
+        TextView title = new TextView(this);
+        title.setText("Notes");
+        title.setTextSize(20);
+        title.setTypeface(android.graphics.Typeface.DEFAULT, android.graphics.Typeface.BOLD);
+        title.setPadding(0, 0, 0, 16);
+        root.addView(title);
 
         titleInput = new EditText(this);
         titleInput.setHint("Title");
+        titleInput.setTextSize(18);
+        titleInput.setPadding(8, 8, 8, 8);
         root.addView(titleInput);
 
         bodyInput = new EditText(this);
         bodyInput.setHint("Body");
-        bodyInput.setLines(3);
+        bodyInput.setHintTextColor(0xFF999999);
+        bodyInput.setTextSize(18);
+        bodyInput.setPadding(8, 8, 8, 8);
+        bodyInput.setMinLines(3);
         root.addView(bodyInput);
 
-        Button save = new Button(this);
-        save.setText("Save");
-        save.setOnClickListener(v -> saveNote());
-        root.addView(save);
+        Button saveBtn = new Button(this);
+        saveBtn.setText("Save");
+        saveBtn.setTextSize(16);
+        saveBtn.setOnClickListener(v -> saveNote());
+        root.addView(saveBtn);
 
-        android.widget.TextView listHint = new android.widget.TextView(this);
+        TextView listHint = new TextView(this);
         listHint.setText("Your notes:");
         listHint.setTextSize(14);
         listHint.setPadding(0, 16, 0, 8);
@@ -96,27 +99,19 @@ public class ICSNotesActivity extends AppCompatActivity {
 
         notesList = new ListView(this);
         root.addView(notesList, new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f));
+            LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f));
 
         setContentView(root);
 
-        // Initialize database.
         NotesDbHelper dbHelper = new NotesDbHelper(this);
         db = dbHelper.getWritableDatabase();
         loadNotes();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (db != null) db.close();
     }
 
     private void saveNote() {
         String title = titleInput.getText().toString().trim();
         String body = bodyInput.getText().toString().trim();
         if (TextUtils.isEmpty(title) && TextUtils.isEmpty(body)) {
-            Toast.makeText(this, "Enter a title or body", Toast.LENGTH_SHORT).show();
             return;
         }
         ContentValues values = new ContentValues();
@@ -127,7 +122,6 @@ public class ICSNotesActivity extends AppCompatActivity {
         titleInput.setText("");
         bodyInput.setText("");
         loadNotes();
-        Toast.makeText(this, "Note saved", Toast.LENGTH_SHORT).show();
     }
 
     private void loadNotes() {
@@ -139,5 +133,11 @@ public class ICSNotesActivity extends AppCompatActivity {
         adapter = new SimpleCursorAdapter(this,
                 android.R.layout.simple_list_item_2, c, from, to, 0);
         notesList.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (db != null) db.close();
     }
 }
