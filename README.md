@@ -58,6 +58,7 @@
 | Age Calculator | Calculate age from birth date |
 | Countdown Timer | Count down from set time |
 | Stopwatch | Measure elapsed time with laps |
+| Pomodoro | 25-minute work timer |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
@@ -171,7 +172,7 @@ Verify:
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
 ✅ APK generated (~9.6 MB)
-✅ 40 activities + 1 wallpaper service + 2 receivers registered
+✅ 41 activities + 1 wallpaper service + 2 receivers registered
 ✅ GitHub repository: https://github.com/YoanValko/mondroid-4
 
 ---
