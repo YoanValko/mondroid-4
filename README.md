@@ -54,6 +54,7 @@
 | Tip Calculator | Calculate tips and totals |
 | Unit Converter | Convert length, weight, temperature |
 | BMI Calculator | Calculate body mass index |
+| Currency Converter | Convert USD to EUR and vice versa |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
@@ -167,7 +168,7 @@ Verify:
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
 ✅ APK generated (~9.6 MB)
-✅ 36 activities + 1 wallpaper service + 2 receivers registered
+✅ 37 activities + 1 wallpaper service + 2 receivers registered
 ✅ GitHub repository: https://github.com/YoanValko/mondroid-4
 
 ---
