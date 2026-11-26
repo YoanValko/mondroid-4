@@ -148,6 +148,7 @@ string app_camera
 string app_clock
 string app_compass
 string app_contacts
+string app_countdown
 string app_currency_converter
 string app_device_info
 string app_drawer

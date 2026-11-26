@@ -760,6 +760,7 @@
     <string name="app_clock">Clock</string>
     <string name="app_compass">Compass</string>
     <string name="app_contacts">Contacts</string>
+    <string name="app_countdown">Countdown Timer</string>
     <string name="app_currency_converter">Currency Converter</string>
     <string name="app_device_info">Device Info</string>
     <string name="app_drawer">Apps</string>

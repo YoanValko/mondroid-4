@@ -98,7 +98,7 @@
 59-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/8.10.2/transforms/5d722a754600a0b425ec59dc5ea41c95/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 60
 61    <application
-61-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-379:19
+61-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-387:19
 62        android:name="com.example.icslauncher.ICSApplication"
 62-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:42:9-39
 63        android:allowBackup="true"
@@ -641,162 +641,176 @@
 362            android:theme="@style/Theme.ICSLauncher" />
 362-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:333:13-53
 363
-364        <!-- BMI Calculator activity. -->
+364        <!-- Countdown Timer activity. -->
 365        <activity
 365-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:338:9-343:38
-366            android:name="com.example.icslauncher.apps.ICSBMICalculatorActivity"
-366-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-58
+366            android:name="com.example.icslauncher.apps.ICSCountdownActivity"
+366-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-54
 367            android:exported="true"
 367-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:343:13-36
-368            android:label="@string/app_bmi_calculator"
-368-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:340:13-55
+368            android:label="@string/app_countdown"
+368-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:340:13-50
 369            android:screenOrientation="unspecified"
 369-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:342:13-52
 370            android:theme="@style/Theme.ICSLauncher" />
 370-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:341:13-53
 371
-372        <!-- Device Info activity. -->
+372        <!-- BMI Calculator activity. -->
 373        <activity
 373-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:346:9-351:38
-374            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
-374-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:347:13-55
+374            android:name="com.example.icslauncher.apps.ICSBMICalculatorActivity"
+374-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:347:13-58
 375            android:exported="true"
 375-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:351:13-36
-376            android:label="@string/app_device_info"
-376-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:348:13-52
+376            android:label="@string/app_bmi_calculator"
+376-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:348:13-55
 377            android:screenOrientation="unspecified"
 377-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:350:13-52
 378            android:theme="@style/Theme.ICSLauncher" />
 378-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:349:13-53
 379
-380        <!-- Clock widget provider. -->
-381        <receiver
-381-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:354:9-363:20
-382            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
-382-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:355:13-56
-383            android:exported="true" >
-383-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:356:13-36
-384            <intent-filter>
-384-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:357:13-359:29
-385                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-385-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:358:17-83
-385-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:358:25-81
-386            </intent-filter>
+380        <!-- Device Info activity. -->
+381        <activity
+381-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:354:9-359:38
+382            android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"
+382-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:355:13-55
+383            android:exported="true"
+383-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:359:13-36
+384            android:label="@string/app_device_info"
+384-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:356:13-52
+385            android:screenOrientation="unspecified"
+385-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:358:13-52
+386            android:theme="@style/Theme.ICSLauncher" />
+386-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:357:13-53
 387
-388            <meta-data
-388-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:360:13-362:60
-389                android:name="android.appwidget.provider"
-389-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:361:17-58
-390                android:resource="@xml/widget_clock_info" />
-390-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:362:17-58
-391        </receiver>
-392
-393        <!--
-394             =====================================================================
-395             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
-396             =====================================================================
-397        -->
-398        <service
-398-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:368:9-378:19
-399            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
-399-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:369:13-58
-400            android:exported="true"
-400-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:371:13-36
-401            android:permission="android.permission.BIND_WALLPAPER" >
-401-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:370:13-67
-402            <intent-filter>
-402-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:372:13-374:29
-403                <action android:name="android.service.wallpaper.WallpaperService" />
-403-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:373:17-84
-403-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:373:25-82
-404            </intent-filter>
-405
-406            <meta-data
-406-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:375:13-377:52
-407                android:name="android.service.wallpaper"
-407-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:376:17-57
-408                android:resource="@xml/wallpaper" />
-408-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:377:17-50
-409        </service>
-410
-411        <provider
-411-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-412            android:name="androidx.startup.InitializationProvider"
-412-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
-413            android:authorities="com.example.icslauncher.androidx-startup"
-413-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
-414            android:exported="false" >
-414-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
-415            <meta-data
-415-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-416                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-416-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
-417                android:value="androidx.startup" />
-417-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
-418            <meta-data
-418-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-419                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-419-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-420                android:value="androidx.startup" />
-420-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-421            <meta-data
-421-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-422                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-422-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-423                android:value="androidx.startup" />
-423-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-424        </provider>
-425
-426        <uses-library
-426-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
-427            android:name="androidx.window.extensions"
-427-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
-428            android:required="false" />
-428-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
-429        <uses-library
-429-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
-430            android:name="androidx.window.sidecar"
-430-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
-431            android:required="false" />
-431-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
-432
-433        <receiver
-433-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-434            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-434-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-435            android:directBootAware="false"
-435-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-436            android:enabled="true"
-436-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-437            android:exported="true"
-437-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-438            android:permission="android.permission.DUMP" >
-438-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-439            <intent-filter>
-439-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-440                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-440-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-440-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-441            </intent-filter>
-442            <intent-filter>
-442-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-443                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-443-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-443-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-444            </intent-filter>
-445            <intent-filter>
-445-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-446                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-446-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-446-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-447            </intent-filter>
-448            <intent-filter>
-448-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-449                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-449-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-449-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-450            </intent-filter>
-451        </receiver>
-452    </application>
-453
-454</manifest>
+388        <!-- Clock widget provider. -->
+389        <receiver
+389-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:362:9-371:20
+390            android:name="com.example.icslauncher.apps.ICSClockWidgetProvider"
+390-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:363:13-56
+391            android:exported="true" >
+391-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:364:13-36
+392            <intent-filter>
+392-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:365:13-367:29
+393                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+393-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:366:17-83
+393-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:366:25-81
+394            </intent-filter>
+395
+396            <meta-data
+396-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:368:13-370:60
+397                android:name="android.appwidget.provider"
+397-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:369:17-58
+398                android:resource="@xml/widget_clock_info" />
+398-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:370:17-58
+399        </receiver>
+400
+401        <!--
+402             =====================================================================
+403             LIVE WALLPAPER SERVICE (Ice Cream Sandwich robot wallpaper)
+404             =====================================================================
+405        -->
+406        <service
+406-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:376:9-386:19
+407            android:name="com.example.icslauncher.wallpaper.ICSWallpaperService"
+407-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:377:13-58
+408            android:exported="true"
+408-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:379:13-36
+409            android:permission="android.permission.BIND_WALLPAPER" >
+409-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:378:13-67
+410            <intent-filter>
+410-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:380:13-382:29
+411                <action android:name="android.service.wallpaper.WallpaperService" />
+411-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:381:17-84
+411-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:381:25-82
+412            </intent-filter>
+413
+414            <meta-data
+414-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:383:13-385:52
+415                android:name="android.service.wallpaper"
+415-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:384:17-57
+416                android:resource="@xml/wallpaper" />
+416-->/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:385:17-50
+417        </service>
+418
+419        <provider
+419-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+420            android:name="androidx.startup.InitializationProvider"
+420-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+421            android:authorities="com.example.icslauncher.androidx-startup"
+421-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+422            android:exported="false" >
+422-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+423            <meta-data
+423-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+424                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+424-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+425                android:value="androidx.startup" />
+425-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+426            <meta-data
+426-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+427                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+427-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+428                android:value="androidx.startup" />
+428-->[androidx.lifecycle:lifecycle-process:2.6.2] /tmp/gradle-home/caches/8.10.2/transforms/566e62177f979936edad32035cfeaa8a/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+429            <meta-data
+429-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+430                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+430-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+431                android:value="androidx.startup" />
+431-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+432        </provider>
+433
+434        <uses-library
+434-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+435            android:name="androidx.window.extensions"
+435-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+436            android:required="false" />
+436-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+437        <uses-library
+437-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+438            android:name="androidx.window.sidecar"
+438-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+439            android:required="false" />
+439-->[androidx.window:window:1.0.0] /tmp/gradle-home/caches/8.10.2/transforms/9781560a01e245fe4141928755173fe1/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+440
+441        <receiver
+441-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+442            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+442-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+443            android:directBootAware="false"
+443-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+444            android:enabled="true"
+444-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+445            android:exported="true"
+445-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+446            android:permission="android.permission.DUMP" >
+446-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+447            <intent-filter>
+447-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+448                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+448-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+448-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+449            </intent-filter>
+450            <intent-filter>
+450-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+451                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+451-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+451-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+452            </intent-filter>
+453            <intent-filter>
+453-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+454                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+454-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+454-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+455            </intent-filter>
+456            <intent-filter>
+456-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+457                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+457-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+457-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/8.10.2/transforms/d04c634de940ed6a89632e5b1df95fa8/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+458            </intent-filter>
+459        </receiver>
+460    </application>
+461
+462</manifest>

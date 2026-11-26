@@ -334,6 +334,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Countdown Timer activity. -->
+        <activity
+            android:name=".apps.ICSCountdownActivity"
+            android:label="@string/app_countdown"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- BMI Calculator activity. -->
         <activity
             android:name=".apps.ICSBMICalculatorActivity"
