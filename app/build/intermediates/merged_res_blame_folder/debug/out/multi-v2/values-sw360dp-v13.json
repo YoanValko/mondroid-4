@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.icslauncher.app-mergeDebugResources-2:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.example.icslauncher.app-mergeDebugResources-34:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/tmp/gradle-home/caches/8.10.2/transforms/30d1663a03226de12296eb99ca9cab92/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/home/yoan_valko/.gradle/caches/8.10.2/transforms/30d1663a03226de12296eb99ca9cab92/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

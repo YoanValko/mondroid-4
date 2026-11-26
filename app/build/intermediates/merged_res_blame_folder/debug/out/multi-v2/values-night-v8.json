@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.icslauncher.app-mergeDebugResources-2:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.icslauncher.app-mergeDebugResources-34:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/tmp/gradle-home/caches/8.10.2/transforms/e38e35806c3085314f134528a82094e6/transformed/appcompat-1.7.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/yoan_valko/.gradle/caches/8.10.2/transforms/e38e35806c3085314f134528a82094e6/transformed/appcompat-1.7.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/res/values-night/colors.xml",
+                    "source": "/home/yoan_valko/InternalDisk/ICSLauncher/app/src/main/res/values-night/colors.xml",
                     "from": {
                         "startLines": "4,6,9,7,8,2,3,5",
                         "startColumns": "4,4,4,4,4,4,4,4",
