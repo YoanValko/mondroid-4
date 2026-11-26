@@ -165,6 +165,7 @@ string app_settings
 string app_sound_recorder
 string app_timer
 string app_tip_calculator
+string app_unit_converter
 string app_weather
 string cancel
 string easter_egg

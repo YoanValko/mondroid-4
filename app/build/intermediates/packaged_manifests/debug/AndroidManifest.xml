@@ -337,6 +337,14 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.ICSLauncher" />
 
+        <!-- Unit Converter activity. -->
+        <activity
+            android:name="com.example.icslauncher.apps.ICSUnitConverterActivity"
+            android:exported="true"
+            android:label="@string/app_unit_converter"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.ICSLauncher" />
+
         <!-- Device Info activity. -->
         <activity
             android:name="com.example.icslauncher.apps.ICSDeviceInfoActivity"

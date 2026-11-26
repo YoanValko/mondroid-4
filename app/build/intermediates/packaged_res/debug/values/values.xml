@@ -77,6 +77,7 @@
     <string name="app_sound_recorder">Sound Recorder</string>
     <string name="app_timer">Timer</string>
     <string name="app_tip_calculator">Tip Calculator</string>
+    <string name="app_unit_converter">Unit Converter</string>
     <string name="app_weather">Weather</string>
     <string name="cancel">Cancel</string>
     <string name="easter_egg">Android Easter egg</string>
