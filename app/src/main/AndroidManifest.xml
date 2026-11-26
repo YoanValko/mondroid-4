@@ -286,6 +286,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- Stopwatch activity. -->
+        <activity
+            android:name=".apps.ICSStopwatchActivity"
+            android:label="@string/app_stopwatch"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Weather activity. -->
         <activity
             android:name=".apps.ICSWeatherActivity"
