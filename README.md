@@ -61,6 +61,7 @@
 | Pomodoro | 25-minute work timer |
 | Todo List | Simple task manager |
 | Todo List | Simple task manager |
+| Todo List | Simple task manager |
 
 ### Easter Egg
 Self-contained Android 4.0.4 Ice Cream Sandwich Easter egg activity:
@@ -174,7 +175,7 @@ Verify:
 
 ✅ Build successful (AGP 8.1.0, Gradle 8.10.2, Java 21)
 ✅ APK generated (~9.6 MB)
-✅ 43 activities + 1 wallpaper service + 2 receivers registered
+✅ 44 activities + 1 wallpaper service + 2 receivers registered
 ✅ GitHub repository: https://github.com/YoanValko/mondroid-4
 
 ---
