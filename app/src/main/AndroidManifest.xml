@@ -318,6 +318,14 @@
             android:screenOrientation="unspecified"
             android:exported="true"/>
 
+        <!-- BMI Calculator activity. -->
+        <activity
+            android:name=".apps.ICSBMICalculatorActivity"
+            android:label="@string/app_bmi_calculator"
+            android:theme="@style/Theme.ICSLauncher"
+            android:screenOrientation="unspecified"
+            android:exported="true"/>
+
         <!-- Device Info activity. -->
         <activity
             android:name=".apps.ICSDeviceInfoActivity"

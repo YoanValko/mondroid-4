@@ -1586,6 +1586,7 @@ string add_to_home
 string add_widget
 string all_apps
 string androidx_startup
+string app_bmi_calculator
 string app_browser
 string app_calculator
 string app_calendar

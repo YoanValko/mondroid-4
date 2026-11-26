@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-357:12
-INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-357:12
-INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-357:12
-INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-357:12
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-365:12
+INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-365:12
+INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-365:12
+INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:2:1-365:12
 MERGED from [androidx.preference:preference:1.2.1] /tmp/gradle-home/caches/8.10.2/transforms/30d1663a03226de12296eb99ca9cab92/transformed/preference-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /tmp/gradle-home/caches/8.10.2/transforms/2dfb3a1bf76b9339162cf6c310c33120/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /tmp/gradle-home/caches/8.10.2/transforms/842e59dd801f01d12c81224f0520532a/transformed/jetified-appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -125,8 +125,8 @@ ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidMan
 	android:name
 		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:39:19-62
 application
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-355:19
-INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-355:19
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-363:19
+INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:41:5-363:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /tmp/gradle-home/caches/8.10.2/transforms/2dfb3a1bf76b9339162cf6c310c33120/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /tmp/gradle-home/caches/8.10.2/transforms/2dfb3a1bf76b9339162cf6c310c33120/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/8.10.2/transforms/402d1fbb53c057edf07e052988fa3371/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
@@ -593,56 +593,68 @@ ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidMan
 		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:317:13-53
 	android:name
 		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:315:13-58
-activity#com.example.icslauncher.apps.ICSDeviceInfoActivity
+activity#com.example.icslauncher.apps.ICSBMICalculatorActivity
 ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:322:9-327:38
 	android:screenOrientation
 		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:326:13-52
 	android:label
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:324:13-52
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:324:13-55
 	android:exported
 		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:327:13-36
 	android:theme
 		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:325:13-53
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:323:13-55
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:323:13-58
+activity#com.example.icslauncher.apps.ICSDeviceInfoActivity
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:330:9-335:38
+	android:screenOrientation
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:334:13-52
+	android:label
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:332:13-52
+	android:exported
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:335:13-36
+	android:theme
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:333:13-53
+	android:name
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:331:13-55
 receiver#com.example.icslauncher.apps.ICSClockWidgetProvider
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:330:9-339:20
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:338:9-347:20
 	android:exported
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:332:13-36
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:340:13-36
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:331:13-56
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:339:13-56
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:333:13-335:29
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:341:13-343:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:334:17-83
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:342:17-83
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:334:25-81
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:342:25-81
 meta-data#android.appwidget.provider
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:336:13-338:60
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:344:13-346:60
 	android:resource
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:338:17-58
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:346:17-58
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:337:17-58
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:345:17-58
 service#com.example.icslauncher.wallpaper.ICSWallpaperService
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:344:9-354:19
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:352:9-362:19
 	android:exported
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:347:13-36
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:355:13-36
 	android:permission
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:346:13-67
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:354:13-67
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:345:13-58
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:353:13-58
 intent-filter#action:name:android.service.wallpaper.WallpaperService
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:348:13-350:29
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:356:13-358:29
 action#android.service.wallpaper.WallpaperService
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:349:17-84
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:357:17-84
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:349:25-82
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:357:25-82
 meta-data#android.service.wallpaper
-ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:351:13-353:52
+ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:359:13-361:52
 	android:resource
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:353:17-50
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:361:17-50
 	android:name
-		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:352:17-57
+		ADDED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml:360:17-57
 uses-sdk
 INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/yoan_valko/Desktop/OPENCODE/ICSLauncher/app/src/main/AndroidManifest.xml
